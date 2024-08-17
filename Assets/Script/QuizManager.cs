@@ -25,11 +25,14 @@ namespace KanjiGame
         private TMP_Text placeHolder;
 
         private Dictionary<string, string> quizDictionary = new Dictionary<string, string>();
+        private List<string> questionsList;
+        private List<string> answersList;
         private string currentQuestion;
         private int currentIndex = 0;
         // Start is called before the first frame update
         void Start()
         {
+            JSONDataConvert();
             InitializeQACollection();
         }
 
@@ -42,23 +45,43 @@ namespace KanjiGame
             CheckAnswer();
         }
 
+        void JSONDataConvert()
+        {
+            TextAsset jsonFile = Resources.Load<TextAsset>("QAData");
+            if(jsonFile != null )
+            {
+                QAContainer qAContainer = JsonUtility.FromJson<QAContainer>(jsonFile.text);
+
+                questionsList = qAContainer.questions;
+                answersList = qAContainer.answers;
+                foreach (string question in questionsList)
+                {
+                    Debug.Log(question);
+                }
+            }
+            else
+            {
+                Debug.LogError("Could not find the JSON file.");
+            }
+        }
+
         void InitializeQACollection()
         {
-            for (int i = 0; i < qAContainer.Questions.Count; i++)
+            for (int i = 0; i < qAContainer.questions.Count; i++)
             {
-                if (!quizDictionary.ContainsKey(qAContainer.Questions[i]))
+                if (!quizDictionary.ContainsKey(qAContainer.questions[i]))
                 {
-                    quizDictionary.Add(qAContainer.Questions[i], qAContainer.Answers[i]);
+                    quizDictionary.Add(qAContainer.questions[i], qAContainer.answers[i]);
                 }
                 else
                 {
-                    Debug.LogWarning($"The question '{qAContainer.Questions[i]}' already exists in the dictionary.");
+                    Debug.LogWarning($"The question '{qAContainer.questions[i]}' already exists in the dictionary.");
                 }
             }
 
-            if (qAContainer.Questions.Count > 0)
+            if (qAContainer.questions.Count > 0)
             {
-                currentQuestion = qAContainer.Questions[currentIndex];
+                currentQuestion = qAContainer.questions[currentIndex];
                 questionText.text = currentQuestion;
             }
 
@@ -93,10 +116,10 @@ namespace KanjiGame
 
         public void ChangeQuestion()
         {
-            if (currentIndex < qAContainer.Questions.Count - 1)
+            if (currentIndex < qAContainer.questions.Count - 1)
                 currentIndex++;
 
-            currentQuestion = qAContainer.Questions[currentIndex];
+            currentQuestion = qAContainer.questions[currentIndex];
             placeHolder.gameObject.SetActive(true);
             questionText.text = currentQuestion;
             inputAnswer.ActivateInputField();
