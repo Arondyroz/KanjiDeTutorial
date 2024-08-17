@@ -1,0 +1,13 @@
+kanji game! Early Prototype
+
+- UI New Game, N4 Kanji
+Gameplay Mechanic
+Game keep progressing for 5 cycles until fight a mob, each cycle have 5 question
+Cycle ends allocate points to transfer to status
+
+Top right : HP, Att Power, Defense
+Middle : button : Exercise, Challenge
+
+
+First Mechanic:
+Make UI Quiz, after 5-10 seconds, the panel will change and player lose points
