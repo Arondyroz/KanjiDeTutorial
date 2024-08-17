@@ -12,6 +12,7 @@ namespace KanjiGame
         [Header("UnityEvents")]
         public UnityEvent onCorrectAnswer;
         public UnityEvent onIncorrectAnswer;
+        public UnityEvent onCycleEnds;
 
         [Header("UI Ref")]
         [SerializeField]
@@ -37,11 +38,11 @@ namespace KanjiGame
         // Update is called once per frame
         void Update()
         {
-            
             if (inputAnswer.isFocused && Input.GetKeyDown(KeyCode.Return))
                 placeHolder.gameObject.SetActive(false);
 
             CheckAnswer();
+            CycleEndsTrigger();
         }
      
         public void CheckAnswer()
@@ -135,9 +136,21 @@ namespace KanjiGame
                     Debug.LogError("qaData.container is null. Check the JSON structure.");
                     return;
                 }
-
-                //questionsList = qAContainer.questions;
-                //answersList = qAContainer.answers;
+                
+                //System.Random rng = new System.Random();
+                //int n = qaData.container.Count;
+                //while (n > 1)
+                //{
+                //    n--;
+                //    int k = rng.Next(n + 1);
+                //    QAContainer value = qaData.container[k];
+                //    qaData.container[k] = qaData.container[n];
+                //    qaData.container[n] = value;
+                //    foreach(var ch in qaData.container)
+                //    {
+                //        Debug.Log(ch);
+                //    }
+                //}
 
                 foreach (QAContainer item in qaData.container)
                 {
@@ -146,6 +159,7 @@ namespace KanjiGame
                 
                 questionsList = new List<string>(quizDictionary.Keys);
                 answersList = new List<List<string>>(quizDictionary.Values);
+
             }
             else
             {
@@ -153,6 +167,15 @@ namespace KanjiGame
             }
         }
 
+        //public void AllocatePoint()
+        public void CycleEndsTrigger()
+        {
+            if(currentIndex == 5)
+            {
+                onCycleEnds?.Invoke();
+                GameManager.Instance.ChangeState(GameState.AllocatePoint);
+            }
+        }
 
     }
 }
