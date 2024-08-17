@@ -1,4 +1,164 @@
 {
-  "questions": [ "生活", "交番" ],
-  "answers":  ["life", "police box"]
+  "container": [
+    {
+      "question": "負け",
+      "answers": [
+        "defeat",
+        "loss",
+        "lose"
+      ]
+    },
+    {
+      "question": "夜中",
+      "answers": [
+        "midnight",
+        "dead of night"
+      ]
+    },
+    {
+      "question": "弁護士",
+      "answers": [
+        "lawyer",
+        "attorney"
+      ]
+    },
+    {
+      "question": "快晴",
+      "answers": [
+        "clear weather",
+        "cloudless weather"
+      ]
+    },
+    {
+      "question": "食糧",
+      "answers": [
+        "provisions",
+        "food supply"
+      ]
+    },
+    {
+      "question": "近代",
+      "answers": [
+        "present day"
+      ]
+    },
+    {
+      "question": "日中",
+      "answers": [
+        "daytime",
+        "during the day"
+      ]
+    },
+    {
+      "question": "小麦",
+      "answers": [
+        "wheat"
+      ]
+    },
+    {
+      "question": "飲食",
+      "answers": [
+        "food and drink",
+        "eating and drinking",
+        "eat and drink",
+        "drink and eat"
+      ]
+    },
+    {
+      "question": "自宅",
+      "answers": [
+        "one’s home",
+        "one’s house"
+      ]
+    },
+    {
+      "question": "休暇",
+      "answers": [
+        "holiday",
+        "day off"
+      ]
+    },
+    {
+      "question": "日常",
+      "answers": [
+        "ordinary",
+        "everyday"
+      ]
+    },
+    {
+      "question": "大いに",
+      "answers": [
+        "very",
+        "much",
+        "greatly"
+      ]
+    },
+    {
+      "question": "支店",
+      "answers": [
+        "branch office"
+      ]
+    },
+    {
+      "question": "市役所",
+      "answers": [
+        "municipal office",
+        "city hall"
+      ]
+    },
+    {
+      "question": "外食",
+      "answers": [
+        "eating out",
+        "dining out"
+      ]
+    },
+    {
+      "question": "景気",
+      "answers": [
+        "business condition"
+      ]
+    },
+    {
+      "question": "食物",
+      "answers": [
+        "food",
+        "foodstuff"
+      ]
+    },
+    {
+      "question": "特徴",
+      "answers": [
+        "feature",
+        "trait"
+      ]
+    },
+    {
+      "question": "調子",
+      "answers": [
+        "tone",
+        "condition",
+        "health"
+      ]
+    },
+    {
+      "question": "上",
+      "answers": [
+        "person of high rank",
+        "government"
+      ]
+    },
+    {
+      "question": "好物",
+      "answers": [
+        "favourite food"
+      ]
+    },
+    {
+      "question": "工事",
+      "answers": [
+        "construction work"
+      ]
+    }
+  ]
 }

@@ -7,11 +7,8 @@ using TMPro;
 
 namespace KanjiGame
 {
-    public class QuizManager : MonoBehaviour
+    public class QuizManager : Singleton<QuizManager>
     {
-        [SerializeField]
-        QAContainer qAContainer;
-
         [Header("UnityEvents")]
         public UnityEvent onCorrectAnswer;
         public UnityEvent onIncorrectAnswer;
@@ -23,80 +20,42 @@ namespace KanjiGame
         private TMP_Text questionText;
         [SerializeField]
         private TMP_Text placeHolder;
+        [SerializeField]
+        private GameObject correctAnswerPanel;
 
-        private Dictionary<string, string> quizDictionary = new Dictionary<string, string>();
+        private Dictionary<string, List<string>> quizDictionary = new Dictionary<string, List<string>>();
         private List<string> questionsList;
-        private List<string> answersList;
+        private List<List<string>> answersList;
         private string currentQuestion;
         private int currentIndex = 0;
         // Start is called before the first frame update
         void Start()
-        {
-            JSONDataConvert();
+        { 
             InitializeQACollection();
         }
 
         // Update is called once per frame
         void Update()
         {
+            
             if (inputAnswer.isFocused && Input.GetKeyDown(KeyCode.Return))
                 placeHolder.gameObject.SetActive(false);
 
             CheckAnswer();
         }
-
-        void JSONDataConvert()
-        {
-            TextAsset jsonFile = Resources.Load<TextAsset>("QAData");
-            if(jsonFile != null )
-            {
-                QAContainer qAContainer = JsonUtility.FromJson<QAContainer>(jsonFile.text);
-
-                questionsList = qAContainer.questions;
-                answersList = qAContainer.answers;
-                foreach (string question in questionsList)
-                {
-                    Debug.Log(question);
-                }
-            }
-            else
-            {
-                Debug.LogError("Could not find the JSON file.");
-            }
-        }
-
-        void InitializeQACollection()
-        {
-            for (int i = 0; i < qAContainer.questions.Count; i++)
-            {
-                if (!quizDictionary.ContainsKey(qAContainer.questions[i]))
-                {
-                    quizDictionary.Add(qAContainer.questions[i], qAContainer.answers[i]);
-                }
-                else
-                {
-                    Debug.LogWarning($"The question '{qAContainer.questions[i]}' already exists in the dictionary.");
-                }
-            }
-
-            if (qAContainer.questions.Count > 0)
-            {
-                currentQuestion = qAContainer.questions[currentIndex];
-                questionText.text = currentQuestion;
-            }
-
-            inputAnswer.ActivateInputField();
-        }
-
+     
         public void CheckAnswer()
         {
             if (!string.IsNullOrWhiteSpace(inputAnswer.text))
             {
                 if(Input.GetKeyDown(KeyCode.Return))
                 {
-                    string userAnswer = inputAnswer.text;
-                    Debug.Log($"Dictionary : {quizDictionary[currentQuestion]}, Answer : {userAnswer}");
-                    if (quizDictionary[currentQuestion] == userAnswer)
+                    string userAnswer = inputAnswer.text.ToLower();
+                    List<string> correctAnswers = quizDictionary[currentQuestion];
+                    bool isCorrect = correctAnswers.Exists(answer => answer.ToLower() == userAnswer);
+      
+                    Debug.Log($"Answer : {quizDictionary[currentQuestion]}, UserAnswer : {userAnswer}");
+                    if (isCorrect)
                     {
                         onCorrectAnswer?.Invoke();
                         Debug.Log("True");
@@ -109,20 +68,91 @@ namespace KanjiGame
 
                     inputAnswer.text = string.Empty;
 
-                    ChangeQuestion();
+                    StartCoroutine(ChangeQuestion(3f));
                 }
             }
         }
 
-        public void ChangeQuestion()
+        IEnumerator ChangeQuestion(float waitTime)
         {
-            if (currentIndex < qAContainer.questions.Count - 1)
+            inputAnswer.enabled = false;
+            correctAnswerPanel.SetActive(true);
+            GameManager.Instance.ChangeState(GameState.ShowAnswer);
+            yield return new WaitForSeconds(waitTime);
+
+            correctAnswerPanel.SetActive(false);
+            if (currentIndex < questionsList.Count - 1)
                 currentIndex++;
 
-            currentQuestion = qAContainer.questions[currentIndex];
+            GameManager.Instance.ChangeState(GameState.Quiz);
+            inputAnswer.enabled = true;
+            currentQuestion = questionsList[currentIndex];
             placeHolder.gameObject.SetActive(true);
             questionText.text = currentQuestion;
             inputAnswer.ActivateInputField();
         }
+
+        void InitializeQACollection()
+        {
+            //for (int i = 0; i < questionsList.Count; i++)
+            //{
+            //    if (!quizDictionary.ContainsKey(questionsList[i]))
+            //    {
+            //        quizDictionary.Add(questionsList[i], answersList[i]);
+            //    }
+            //    else
+            //    {
+            //        Debug.LogWarning($"The question '{questionsList[i]}' already exists in the dictionary.");
+            //    }
+            //}
+
+            JSONDataConvert();
+
+            if (questionsList.Count > 0)
+            {
+                currentQuestion = questionsList[currentIndex];
+                questionText.text = currentQuestion;
+            }
+
+            inputAnswer.ActivateInputField();
+        }
+
+        void JSONDataConvert()
+        {
+            TextAsset jsonFile = Resources.Load<TextAsset>("QAData");
+            if (jsonFile != null)
+            {
+                QADataList qaData = JsonUtility.FromJson<QADataList>(jsonFile.text);
+
+                if (qaData == null)
+                {
+                    Debug.LogError("QADataList is null. Check the JSON structure.");
+                    return;
+                }
+
+                if (qaData.container == null)
+                {
+                    Debug.LogError("qaData.container is null. Check the JSON structure.");
+                    return;
+                }
+
+                //questionsList = qAContainer.questions;
+                //answersList = qAContainer.answers;
+
+                foreach (QAContainer item in qaData.container)
+                {
+                    quizDictionary.Add(item.question, item.answers);
+                }
+                
+                questionsList = new List<string>(quizDictionary.Keys);
+                answersList = new List<List<string>>(quizDictionary.Values);
+            }
+            else
+            {
+                Debug.LogError("Could not find the JSON file.");
+            }
+        }
+
+
     }
 }
