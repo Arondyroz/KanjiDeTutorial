@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f6aa6f6afaa7040b4b2bbd62d149f7, type: 3}
   m_Name: BossData
   m_EditorClassIdentifier: 
-  HP: 500
-  Attack: 30
-  Defense: 20
+  hp: 150
+  attack: 10
+  defense: 1.5

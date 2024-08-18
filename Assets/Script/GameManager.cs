@@ -16,6 +16,8 @@ namespace KanjiGame
     }
     public class GameManager : Singleton<GameManager>
     {
+        public GameObject pointPanel;
+        public GameObject battlePanel;
         public UnityEvent onStatChanged;
         [Header("UI Ref")]
         [SerializeField]
@@ -30,8 +32,7 @@ namespace KanjiGame
         private TMP_Text[] defenseText;
 
         [Header("Game Data")]
-        [SerializeField]
-        private GameState gameState;
+        public GameState gameState;
         [SerializeField]
         private Stats playerData;
         [SerializeField]
@@ -39,16 +40,21 @@ namespace KanjiGame
 
         public int Score = 0;
 
-        int hpValue;
-        int attackValue;
-        int defenseValue;
+        public float hpValue;
+        public float attackValue;
+        public float defenseValue;
+
+        public AudioSource audioSource;
+
 
         private void Start()
         {
+            audioSource.Play();
             hpValue = playerData.hp;
             attackValue = playerData.attack;
             defenseValue = playerData.defense;
         }
+
         private void Update()
         {
             ChangeScoreUI();
@@ -99,6 +105,13 @@ namespace KanjiGame
                     btn.interactable = false;
                 }
             }
+        }
+
+        public void GoToBattleScene()
+        {
+            ChangeState(GameState.Battle);
+            pointPanel.SetActive(false);
+            battlePanel.SetActive(true);
         }
 
     }

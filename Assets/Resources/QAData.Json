@@ -6,63 +6,124 @@
         "defeat",
         "loss",
         "lose"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A serene Shinto shrine in Japan at dusk, with cherry blossom trees in full bloom, and a formidable samurai warrior standing on the right side of the image, ready for a duel with his katana drawn.",
+        "scene_text_en": "As the sun sets, the petals fall gently around the ancient shrine, where peace and silence are often revered.",
+        "scene_text_jp": "日没とともに、花びらが古い神社の周りに静かに舞い降りる。ここでは、平和と静けさが尊ばれている。",
+        "image_path": "bgs_v2/make-02d106de-b3d5-48a8-8843-.png",
+        "word": "make"
+      }
     },
     {
       "question": "夜中",
       "answers": [
         "midnight",
         "dead of night"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A quiet, traditional Japanese village at midnight under a full moon, with narrow streets lit by lanterns and a formidable ninja dressed in black standing on the right side of the image, blending into the shadows.",
+        "scene_text_en": "In the stillness of the night, only the flickering lanterns illuminate the narrow pathways of the hidden village.",
+        "scene_text_jp": "夜の静けさの中、狭い道を照らすのは揺れる灯篭の光だけだ。",
+        "image_path": "bgs_v2/yonaka-99a8092f-08e2-4d11-9c64-.png",
+        "word": "yonaka"
+      }
     },
     {
       "question": "弁護士",
       "answers": [
         "lawyer",
         "attorney"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese courtroom scene during the Edo period, with tatami mats and sliding paper doors. On the right side of the image stands a formidable lawyer in traditional attire, holding a scroll.",
+        "scene_text_en": "In this place of judgment, words hold as much power as the sword.",
+        "scene_text_jp": "この裁きの場では、言葉は剣と同じように力を持つ。",
+        "image_path": "bgs_v2/bengoshi-e3ab1846-b1c0-4f0d-9d7a-.png",
+        "word": "bengoshi"
+      }
     },
     {
       "question": "快晴",
       "answers": [
         "clear weather",
         "cloudless weather"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A vast Japanese garden in spring, with meticulously raked sand, stone lanterns, and a tranquil koi pond. On the right side of the image stands a formidable figure of a kaisei, a mythical sea god, emerging from the water with a majestic presence.",
+        "scene_text_en": "Amidst the serene garden, an ancient guardian rises from the tranquil waters, exuding both power and grace.",
+        "scene_text_jp": "静かな庭の中で、古の守護者が穏やかな水から姿を現し、その存在感を放つ。",
+        "image_path": "bgs_v2/kaisei-194663d0-ab02-4f6a-8de2-.png",
+        "word": "kaisei"
+      }
     },
     {
       "question": "食糧",
       "answers": [
         "provisions",
         "food supply"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A bustling Japanese market place in the Edo period, filled with vibrant stalls of fresh fish, vegetables, and traditional goods. On the right side of the image, a formidable merchant in traditional attire, stands proudly with a basket full of produce.",
+        "scene_text_en": "In the heart of the marketplace, the bounty of land and sea come together.",
+        "scene_text_jp": "市場の中心で、陸と海の恵みが交わる。",
+        "image_path": "bgs_v2/shokuryou-019c3f8e-c233-40b2-93ea-.png",
+        "word": "shokuryou"
+      }
     },
     {
       "question": "近代",
       "answers": [
         "present day"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "An early 20th-century Japanese village transitioning to modernity, where traditional wooden houses stand alongside newly built concrete buildings with electrical poles. On the right side of the image, a formidable engineer in early 20th-century attire holds blueprints, symbolizing progress.",
+        "scene_text_en": "At the crossroads of old and new, the seeds of innovation take root in the land of tradition.",
+        "scene_text_jp": "古きと新しきの交差点で、革新の種が伝統の地に根を下ろす。",
+        "image_path": "bgs_v2/kindai-aaaf22bb-6528-4a8e-aa67-.png",
+        "word": "kindai"
+      }
     },
     {
       "question": "日中",
       "answers": [
         "daytime",
         "during the day"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A mid-20th-century Japanese streetscape, showcasing a mix of traditional Japanese and Western architectural styles. Red torii gates contrast with telephone booths and Western-style cafes. On the right side, a formidable diplomat in a crisp suit and hat stands with a briefcase, symbolizing diplomacy and cultural exchange.",
+        "scene_text_en": "In the blend of East and West, bridges of understanding are built through mutual respect.",
+        "scene_text_jp": "東洋と西洋の融合の中で、相互尊重を通じて理解の架け橋が築かれる。",
+        "image_path": "bgs_v2/nicchuu-6f6ba8d4-8553-44da-b446-.png",
+        "word": "nicchuu"
+      }
     },
     {
       "question": "小麦",
       "answers": [
         "wheat"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese rural landscape during the harvest season, golden wheat fields sway under a clear blue sky. In the background, traditional farmhouses dot the countryside. On the right side of the image, a formidable farmer in traditional attire stands with a sickle and a bundle of wheat, symbolizing the harvest.",
+        "scene_text_en": "Among the golden waves, the fruits of labor are gathered with care.",
+        "scene_text_jp": "金色の波の中で、労働の果実が丁寧に集められる。",
+        "image_path": "bgs_v2/komugi-51cf3709-b175-4cdb-92b3-.png",
+        "word": "komugi"
+      }
     },
     {
       "question": "飲食",
       "answers": [
         "food and drink",
-        "eating and drinking",
-        "eat and drink",
-        "drink and eat"
-      ]
+        "eating and drinking"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling Japanese street market at twilight, colorful lanterns illuminating various food stalls selling traditional Japanese cuisine such as sushi, ramen, and takoyaki. Patrons are seen enjoying the vibrant atmosphere. On the right side of the image, a formidable chef with a tall white hat and apron stands proudly with a steaming bowl of ramen, symbolizing culinary mastery.",
+        "scene_text_en": "In the heart of the market, flavors burst and cultures blend, creating a symphony for the senses.",
+        "scene_text_jp": "市場の中心で、味が弾け文化が融合し、感覚の交響曲が生まれる。",
+        "image_path": "bgs_v2/inshoku-b248a61d-0758-43d0-9c29-.png",
+        "word": "inshoku"
+      }
     },
     {
       "question": "自宅",

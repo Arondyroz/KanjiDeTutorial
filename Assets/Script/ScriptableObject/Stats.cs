@@ -8,11 +8,11 @@ namespace KanjiGame
     public class Stats : ScriptableObject
     {
         [SerializeField]
-        public int hp = 50;
+        public float hp = 50;
         [SerializeField]
-        public int attack = 1;
+        public float attack = 1;
         [SerializeField]
-        public int defense = 1;
+        public float defense = 1;
 
         //public int HP { get; private set; }
 

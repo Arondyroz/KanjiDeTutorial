@@ -23,10 +23,15 @@ namespace KanjiGame
         private TMP_Text placeHolder;
         [SerializeField]
         private GameObject correctAnswerPanel;
+        [SerializeField]
+        private Image imageBackground;
+        [SerializeField]
+        private TMP_Text answerText;
 
         private Dictionary<string, List<string>> quizDictionary = new Dictionary<string, List<string>>();
         private List<string> questionsList;
         private List<List<string>> answersList;
+        private List<Sprite> spriteData;
         private string currentQuestion;
         private int currentIndex = 0;
         // Start is called before the first frame update
@@ -40,6 +45,8 @@ namespace KanjiGame
         {
             if (inputAnswer.isFocused && Input.GetKeyDown(KeyCode.Return))
                 placeHolder.gameObject.SetActive(false);
+
+            answerText.text = answersList[currentIndex][0];
 
             CheckAnswer();
             CycleEndsTrigger();
@@ -95,18 +102,6 @@ namespace KanjiGame
 
         void InitializeQACollection()
         {
-            //for (int i = 0; i < questionsList.Count; i++)
-            //{
-            //    if (!quizDictionary.ContainsKey(questionsList[i]))
-            //    {
-            //        quizDictionary.Add(questionsList[i], answersList[i]);
-            //    }
-            //    else
-            //    {
-            //        Debug.LogWarning($"The question '{questionsList[i]}' already exists in the dictionary.");
-            //    }
-            //}
-
             JSONDataConvert();
 
             if (questionsList.Count > 0)
@@ -155,11 +150,11 @@ namespace KanjiGame
                 foreach (QAContainer item in qaData.container)
                 {
                     quizDictionary.Add(item.question, item.answers);
+                    //LoadImageDataJSOn(item.data.image_path);
                 }
                 
                 questionsList = new List<string>(quizDictionary.Keys);
                 answersList = new List<List<string>>(quizDictionary.Values);
-
             }
             else
             {
@@ -167,6 +162,19 @@ namespace KanjiGame
             }
         }
 
+
+        public void LoadImageDataJSOn(string imagePath)
+        {
+            Sprite imageSprite = Resources.Load<Sprite>(imagePath);
+            if (imageSprite != null)
+            {
+                spriteData.Add(imageSprite);
+            }
+            else
+            {
+                Debug.LogError("Image not found at path: " + imagePath);
+            }
+        }
         //public void AllocatePoint()
         public void CycleEndsTrigger()
         {
@@ -174,6 +182,7 @@ namespace KanjiGame
             {
                 onCycleEnds?.Invoke();
                 GameManager.Instance.ChangeState(GameState.AllocatePoint);
+                currentIndex = 0;
             }
         }
 
