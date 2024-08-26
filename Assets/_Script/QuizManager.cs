@@ -132,20 +132,6 @@ namespace KanjiGame
                     return;
                 }
                 
-                //System.Random rng = new System.Random();
-                //int n = qaData.container.Count;
-                //while (n > 1)
-                //{
-                //    n--;
-                //    int k = rng.Next(n + 1);
-                //    QAContainer value = qaData.container[k];
-                //    qaData.container[k] = qaData.container[n];
-                //    qaData.container[n] = value;
-                //    foreach(var ch in qaData.container)
-                //    {
-                //        Debug.Log(ch);
-                //    }
-                //}
 
                 foreach (QAContainer item in qaData.container)
                 {

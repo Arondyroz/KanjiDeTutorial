@@ -1984,7 +1984,7 @@ RectTransform:
   m_Father: {fileID: 1494222471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2387,7 +2387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &754203864
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4065,7 +4065,7 @@ MonoBehaviour:
   defenseText:
   - {fileID: 201363189}
   - {fileID: 2052541603}
-  gameState: 0
+  gameState: 3
   playerData: {fileID: 11400000, guid: 1e35ddc82e3c11148b0f5339596d24dc, type: 2}
   button:
   - {fileID: 2011816542}
@@ -4562,18 +4562,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceebe8019edf8df4b9e3d433df01f9f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStat: {fileID: 11400000, guid: edd003e025d08c44193477bd171af74d, type: 2}
-  playerHP: 0
-  playerAttack: 0
-  playerDefense: 0
+  playerStatsSO: {fileID: 11400000, guid: 1e35ddc82e3c11148b0f5339596d24dc, type: 2}
+  enemyStatsSO: {fileID: 11400000, guid: edd003e025d08c44193477bd171af74d, type: 2}
   playerHealthBar: {fileID: 1167991150}
-  currentPlayerHealth: 0
-  playerHealthText: {fileID: 387203742}
-  enemyHP: 0
-  enemyAttack: 0
-  enemyDefense: 0
   enemyHealthBar: {fileID: 1494222473}
-  currentEnemyHealth: 0
+  playerHealthText: {fileID: 387203742}
   enemyHealthText: {fileID: 1065945713}
   stateTurn: 0
 --- !u!1 &1413508406
@@ -4766,7 +4759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1440156508
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5927,7 +5920,7 @@ RectTransform:
   m_Father: {fileID: 1167991148}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

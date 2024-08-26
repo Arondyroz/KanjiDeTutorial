@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.TextCore.Text;
 
 namespace KanjiGame
 {
@@ -14,27 +15,18 @@ namespace KanjiGame
     }
     public class BattleManager : MonoBehaviour
     {
-        public Stats enemyStat;
-        [Header("Player Health")]
-        public float playerHP;
-        public float playerAttack;
-        public float playerDefense;
-        public HealthBar playerHealthBar;
-        public float currentPlayerHealth;
-        public TMP_Text playerHealthText;
+        [SerializeField] private Stats playerStatsSO;
+        [SerializeField] private Stats enemyStatsSO;
+        [SerializeField] private HealthBar playerHealthBar;
+        [SerializeField] private HealthBar enemyHealthBar;
+        [SerializeField] private TMP_Text playerHealthText;
+        [SerializeField] private TMP_Text enemyHealthText;
 
-        [Header("Enemy Health")]
-        public float enemyHP;
-        public float enemyAttack;
-        public float enemyDefense;
-        public HealthBar enemyHealthBar;
-        public float currentEnemyHealth;
-        public TMP_Text enemyHealthText;
-
+        private Entity player;
+        private Entity enemy;
 
         public StateTurn stateTurn;
 
-        private bool isPlayerTurn = true;
         private bool isBattleStarted = false;
         private Coroutine battleCoroutine;
 
@@ -42,15 +34,9 @@ namespace KanjiGame
         {
             stateTurn = StateTurn.PlayerTurn;
 
-            enemyHP = enemyStat.hp;
-            enemyAttack = enemyStat.attack;
-            enemyDefense = enemyStat.defense;
+            player = new Entity(playerStatsSO, playerHealthBar, playerHealthText);
+            enemy = new Entity(enemyStatsSO, enemyHealthBar, enemyHealthText);
 
-            currentPlayerHealth = playerHP;
-            currentEnemyHealth = enemyHP;
-            enemyHealthBar.SetMaxHealth(enemyHP);
-
-            isPlayerTurn = true;
         }
 
         private void Update()
@@ -67,7 +53,7 @@ namespace KanjiGame
             yield return new WaitForSeconds(1f);
             Debug.Log("Battle started");
 
-            while (currentPlayerHealth > 0f && currentEnemyHealth > 0f)
+            while (player.CurrentHealth > 0f && enemy.CurrentHealth > 0f)
             {
                 if (stateTurn == StateTurn.PlayerTurn)
                 {
@@ -85,24 +71,21 @@ namespace KanjiGame
 
         IEnumerator PlayerTurn()
         {
-            float damage = Mathf.Max(playerAttack - enemyDefense, 0.3f);
-            currentEnemyHealth -= damage;
-            enemyHealthText.text = damage.ToString();
-            enemyHealthBar.SetHealth(currentEnemyHealth);
-            Debug.Log($"Player attacks: {damage} damage. Enemy health: {currentEnemyHealth}");
+            float damage = Mathf.Max(player.GetAttackDamage() - enemy.GetDefense(), 1f);
+            enemy.TakeDamage(damage);
+            Debug.Log($"Player attacks: {damage} damage. Enemy health: {enemy.CurrentHealth}");
 
             yield return new WaitForSeconds(1.5f);
+            //playerHealthBar.SetMaxHealth(player.CurrentHealth);
 
             stateTurn = StateTurn.EnemyTurn;
         }
 
         IEnumerator EnemyTurn()
         {
-            float damage = Mathf.Max(enemyAttack - playerDefense, 0.3f);
-            currentPlayerHealth -= damage;
-            playerHealthText.text = damage.ToString();
-            playerHealthBar.SetHealth(currentPlayerHealth);
-            Debug.Log($"Enemy attacks: {damage} damage. Player health: {currentPlayerHealth}");
+            float damage = Mathf.Max(enemy.GetAttackDamage() - player.GetDefense(), 1f);
+            player.TakeDamage(damage);
+            Debug.Log($"Enemy attacks: {damage} damage. Player health: {player.CurrentHealth}");
 
             yield return new WaitForSeconds(1.5f);
 
@@ -120,11 +103,11 @@ namespace KanjiGame
 
         public void ChangePlayerHp()
         {
-            playerHP = GameManager.Instance.hpValue;
-            playerAttack = GameManager.Instance.attackValue;
-            playerDefense = GameManager.Instance.defenseValue;
-            currentPlayerHealth = playerHP;
-            playerHealthBar.SetMaxHealth(playerHP);
+            //playerHP = GameManager.Instance.hpValue;
+            //playerAttack = GameManager.Instance.attackValue;
+            //playerDefense = GameManager.Instance.defenseValue;
+            //currentPlayerHealth = playerHP;
+            //playerHealthBar.SetMaxHealth(playerHP);
         }
     }
 }
