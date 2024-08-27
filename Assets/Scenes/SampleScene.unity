@@ -1984,7 +1984,7 @@ RectTransform:
   m_Father: {fileID: 1494222471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2387,7 +2387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &754203864
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2756,8 +2756,9 @@ MonoBehaviour:
   questionText: {fileID: 172943111}
   placeHolder: {fileID: 160303750}
   correctAnswerPanel: {fileID: 1239586541}
-  imageBackground: {fileID: 0}
+  imageBackground: {fileID: 643574395}
   answerText: {fileID: 361822975}
+  image: []
 --- !u!1 &861698896
 GameObject:
   m_ObjectHideFlags: 0
@@ -4065,7 +4066,7 @@ MonoBehaviour:
   defenseText:
   - {fileID: 201363189}
   - {fileID: 2052541603}
-  gameState: 3
+  gameState: 0
   playerData: {fileID: 11400000, guid: 1e35ddc82e3c11148b0f5339596d24dc, type: 2}
   button:
   - {fileID: 2011816542}
@@ -4759,7 +4760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1440156508
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5920,7 +5921,7 @@ RectTransform:
   m_Father: {fileID: 1167991148}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

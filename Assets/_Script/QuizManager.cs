@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
+using System.ComponentModel;
+using System.Xml.Linq;
 
 namespace KanjiGame
 {
@@ -35,6 +37,11 @@ namespace KanjiGame
         private string currentQuestion;
         private int currentIndex = 0;
         // Start is called before the first frame update
+
+        [SerializeField]
+        private Dictionary<string, QAContainer> newDict = new();
+        [SerializeField]
+        private List<Sprite> image;
         void Start()
         { 
             InitializeQACollection();
@@ -103,7 +110,7 @@ namespace KanjiGame
         void InitializeQACollection()
         {
             JSONDataConvert();
-
+            InitializeJson2();
             if (questionsList.Count > 0)
             {
                 currentQuestion = questionsList[currentIndex];
@@ -148,19 +155,40 @@ namespace KanjiGame
             }
         }
 
-
-        public void LoadImageDataJSOn(string imagePath)
+        void InitializeJson2()
         {
-            Sprite imageSprite = Resources.Load<Sprite>(imagePath);
-            if (imageSprite != null)
+            TextAsset jsonFile = Resources.Load<TextAsset>("QAData");
+
+            QADataList qaData = JsonUtility.FromJson<QADataList>(jsonFile.text);
+            if (jsonFile != null)
             {
-                spriteData.Add(imageSprite);
+                foreach(QAContainer qa in qaData.container)
+                {
+                    Sprite imageSprite = Resources.Load<Sprite>(qa.data.image_path);
+
+                    if (imageSprite != null)
+                    {
+                        // Add the sprite to your dictionary or list
+                        newDict[qa.question] = qa;
+                        image.Add(imageSprite);
+                    }
+                    else
+                    {
+                        Debug.LogError("Failed to load sprite at path: " + qa.data.image_path);
+                    }
+                }
             }
-            else
+
+            questionsList = new List<string>(newDict.Keys);
+
+            if(questionsList.Count > 0)
             {
-                Debug.LogError("Image not found at path: " + imagePath);
+                currentQuestion = questionsList[0];
+                questionText.text = currentQuestion;
+
             }
         }
+
         //public void AllocatePoint()
         public void CycleEndsTrigger()
         {

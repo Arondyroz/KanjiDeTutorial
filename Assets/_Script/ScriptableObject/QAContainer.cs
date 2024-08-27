@@ -6,18 +6,15 @@ namespace KanjiGame
 {
     //[CreateAssetMenu(fileName = "New Quiz Data", menuName = "Quiz Data", order = 51)]
     [System.Serializable]
-    public class QAContainer
+    public struct QAContainer
     {
         public string question;
         public List<string> answers;
         public Data data;
-        //// Public read-only properties
-        //public IReadOnlyList<string> Questions => questions;
-        //public IReadOnlyList<string> Answers => answers;
     }
 
     [System.Serializable]
-    public class Data
+    public struct Data
     {
         public string dalle_prompt;
         public string scene_text_en;
