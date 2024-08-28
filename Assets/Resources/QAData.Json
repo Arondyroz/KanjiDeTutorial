@@ -4,14 +4,13 @@
       "question": "負け",
       "answers": [
         "defeat",
-        "loss",
-        "lose"
+        "loss"
       ],
       "data": {
         "dalle_prompt": "A serene Shinto shrine in Japan at dusk, with cherry blossom trees in full bloom, and a formidable samurai warrior standing on the right side of the image, ready for a duel with his katana drawn.",
         "scene_text_en": "As the sun sets, the petals fall gently around the ancient shrine, where peace and silence are often revered.",
         "scene_text_jp": "日没とともに、花びらが古い神社の周りに静かに舞い降りる。ここでは、平和と静けさが尊ばれている。",
-        "image_path": "bgs_v2/make-02d106de-b3d5-48a8-8843-.png",
+        "image_path": "bgs_v2/make-02d106de-b3d5-48a8-8843-",
         "word": "make"
       }
     },
@@ -25,7 +24,7 @@
         "dalle_prompt": "A quiet, traditional Japanese village at midnight under a full moon, with narrow streets lit by lanterns and a formidable ninja dressed in black standing on the right side of the image, blending into the shadows.",
         "scene_text_en": "In the stillness of the night, only the flickering lanterns illuminate the narrow pathways of the hidden village.",
         "scene_text_jp": "夜の静けさの中、狭い道を照らすのは揺れる灯篭の光だけだ。",
-        "image_path": "bgs_v2/yonaka-99a8092f-08e2-4d11-9c64-.png",
+        "image_path": "bgs_v2/yonaka-99a8092f-08e2-4d11-9c64-",
         "word": "yonaka"
       }
     },
@@ -39,7 +38,7 @@
         "dalle_prompt": "A traditional Japanese courtroom scene during the Edo period, with tatami mats and sliding paper doors. On the right side of the image stands a formidable lawyer in traditional attire, holding a scroll.",
         "scene_text_en": "In this place of judgment, words hold as much power as the sword.",
         "scene_text_jp": "この裁きの場では、言葉は剣と同じように力を持つ。",
-        "image_path": "bgs_v2/bengoshi-e3ab1846-b1c0-4f0d-9d7a-.png",
+        "image_path": "bgs_v2/bengoshi-e3ab1846-b1c0-4f0d-9d7a-",
         "word": "bengoshi"
       }
     },
@@ -53,7 +52,7 @@
         "dalle_prompt": "A vast Japanese garden in spring, with meticulously raked sand, stone lanterns, and a tranquil koi pond. On the right side of the image stands a formidable figure of a kaisei, a mythical sea god, emerging from the water with a majestic presence.",
         "scene_text_en": "Amidst the serene garden, an ancient guardian rises from the tranquil waters, exuding both power and grace.",
         "scene_text_jp": "静かな庭の中で、古の守護者が穏やかな水から姿を現し、その存在感を放つ。",
-        "image_path": "bgs_v2/kaisei-194663d0-ab02-4f6a-8de2-.png",
+        "image_path": "bgs_v2/kaisei-194663d0-ab02-4f6a-8de2-",
         "word": "kaisei"
       }
     },
@@ -67,7 +66,7 @@
         "dalle_prompt": "A bustling Japanese market place in the Edo period, filled with vibrant stalls of fresh fish, vegetables, and traditional goods. On the right side of the image, a formidable merchant in traditional attire, stands proudly with a basket full of produce.",
         "scene_text_en": "In the heart of the marketplace, the bounty of land and sea come together.",
         "scene_text_jp": "市場の中心で、陸と海の恵みが交わる。",
-        "image_path": "bgs_v2/shokuryou-019c3f8e-c233-40b2-93ea-.png",
+        "image_path": "bgs_v2/shokuryou-019c3f8e-c233-40b2-93ea-",
         "word": "shokuryou"
       }
     },
@@ -80,7 +79,7 @@
         "dalle_prompt": "An early 20th-century Japanese village transitioning to modernity, where traditional wooden houses stand alongside newly built concrete buildings with electrical poles. On the right side of the image, a formidable engineer in early 20th-century attire holds blueprints, symbolizing progress.",
         "scene_text_en": "At the crossroads of old and new, the seeds of innovation take root in the land of tradition.",
         "scene_text_jp": "古きと新しきの交差点で、革新の種が伝統の地に根を下ろす。",
-        "image_path": "bgs_v2/kindai-aaaf22bb-6528-4a8e-aa67-.png",
+        "image_path": "bgs_v2/kindai-aaaf22bb-6528-4a8e-aa67-",
         "word": "kindai"
       }
     },
@@ -94,7 +93,7 @@
         "dalle_prompt": "A mid-20th-century Japanese streetscape, showcasing a mix of traditional Japanese and Western architectural styles. Red torii gates contrast with telephone booths and Western-style cafes. On the right side, a formidable diplomat in a crisp suit and hat stands with a briefcase, symbolizing diplomacy and cultural exchange.",
         "scene_text_en": "In the blend of East and West, bridges of understanding are built through mutual respect.",
         "scene_text_jp": "東洋と西洋の融合の中で、相互尊重を通じて理解の架け橋が築かれる。",
-        "image_path": "bgs_v2/nicchuu-6f6ba8d4-8553-44da-b446-.png",
+        "image_path": "bgs_v2/nicchuu-6f6ba8d4-8553-44da-b446-",
         "word": "nicchuu"
       }
     },
@@ -107,7 +106,7 @@
         "dalle_prompt": "A serene Japanese rural landscape during the harvest season, golden wheat fields sway under a clear blue sky. In the background, traditional farmhouses dot the countryside. On the right side of the image, a formidable farmer in traditional attire stands with a sickle and a bundle of wheat, symbolizing the harvest.",
         "scene_text_en": "Among the golden waves, the fruits of labor are gathered with care.",
         "scene_text_jp": "金色の波の中で、労働の果実が丁寧に集められる。",
-        "image_path": "bgs_v2/komugi-51cf3709-b175-4cdb-92b3-.png",
+        "image_path": "bgs_v2/komugi-51cf3709-b175-4cdb-92b3-",
         "word": "komugi"
       }
     },
@@ -121,30 +120,51 @@
         "dalle_prompt": "A bustling Japanese street market at twilight, colorful lanterns illuminating various food stalls selling traditional Japanese cuisine such as sushi, ramen, and takoyaki. Patrons are seen enjoying the vibrant atmosphere. On the right side of the image, a formidable chef with a tall white hat and apron stands proudly with a steaming bowl of ramen, symbolizing culinary mastery.",
         "scene_text_en": "In the heart of the market, flavors burst and cultures blend, creating a symphony for the senses.",
         "scene_text_jp": "市場の中心で、味が弾け文化が融合し、感覚の交響曲が生まれる。",
-        "image_path": "bgs_v2/inshoku-b248a61d-0758-43d0-9c29-.png",
+        "image_path": "bgs_v2/inshoku-b248a61d-0758-43d0-9c29-",
         "word": "inshoku"
       }
     },
     {
       "question": "自宅",
       "answers": [
-        "one’s home",
-        "one’s house"
-      ]
+        "one’;s home",
+        "one’;s house"
+      ],
+      "data": {
+        "dalle_prompt": "A tranquil Japanese living room with tatami flooring, sliding shoji doors, and minimalistic decor featuring traditional elements like a bonsai tree and a tea set. Soft natural light filters through the shoji doors, creating a serene ambiance. On the right side of the image, a formidable elderly man in traditional kimono stands with a book in hand, symbolizing wisdom and tranquility at home.",
+        "scene_text_en": "In the quiet comfort of one's own space, serenity and wisdom reside.",
+        "scene_text_jp": "自分の空間の静かな快適さの中で、静寂と知恵が存在する。",
+        "image_path": "bgs_v2/jitaku-06ff55dc-a211-49a1-b6e9-",
+        "word": "jitaku"
+      }
     },
     {
       "question": "休暇",
       "answers": [
         "holiday",
         "day off"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A scenic view of a traditional Japanese hot spring resort (onsen) nestled in a lush mountainous area during autumn. Steam rises from the hot springs, and maple leaves in vibrant hues of red and orange cover the ground. On the right side of the image, a formidable spa attendant in traditional yukata stands with a welcoming smile, holding a bamboo bucket and towel, symbolizing relaxation and rejuvenation.",
+        "scene_text_en": "Amidst the warmth of the springs and the beauty of autumn, relaxation takes root.",
+        "scene_text_jp": "温泉の暖かさと秋の美しさの中で、リラクゼーションが根を下ろす。",
+        "image_path": "bgs_v2/kyuuka-78d35f43-be77-4942-be19-",
+        "word": "kyuuka"
+      }
     },
     {
       "question": "日常",
       "answers": [
         "ordinary",
         "everyday"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A typical day in modern Tokyo, with high-rise buildings, busy crosswalks, and a train station entrance. People in business attire are seen hurrying about, while tourists take photos. A large electronic billboard displays colorful advertisements. On the right side of the image, a formidable business person with a briefcase stands confidently, symbolizing daily perseverance.",
+        "scene_text_en": "In the rhythm of the bustling city, daily life unfolds with purpose and drive.",
+        "scene_text_jp": "賑やかな都市のリズムの中で、日常生活が目的と情熱をもって展開される。",
+        "image_path": "bgs_v2/nichijou-12db1673-67d3-4020-af91-",
+        "word": "nichijou"
+      }
     },
     {
       "question": "大いに",
@@ -152,47 +172,96 @@
         "very",
         "much",
         "greatly"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A serene view of a vast, open field in Japan, with tall swaying grasses under a clear blue sky. In the distance, a majestic herd of deer grazes peacefully. The sun casts a warm, golden glow across the landscape. On the right side of the image, a formidable park ranger in traditional attire stands watchfully, symbolizing the balance of nature and tranquility.",
+        "scene_text_en": "Among the endless fields and gentle wildlife, one finds a profound sense of peace.",
+        "scene_text_jp": "果てしない野原と穏やかな野生動物の中で、深い安らぎが見つかる。",
+        "image_path": "bgs_v2/ooi-ni-d23ecac6-f165-4159-b01b-",
+        "word": "ooi ni"
+      }
     },
     {
       "question": "支店",
       "answers": [
         "branch office"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "An enchanting view of the historic Shitenno-ji Temple in Osaka, Japan, during Sakura (cherry blossom) season. Pink cherry blossoms are in full bloom, their petals gently falling and carpeting the ground. The temple's pagoda and entrance gate stand prominently in the background. On the right side of the image, a formidable temple monk in traditional robes stands calmly, symbolizing wisdom and serenity.",
+        "scene_text_en": "Under the spell of fleeting blossoms, wisdom and serenity prevail.",
+        "scene_text_jp": "儚い花の魅力の中で、知恵と静けさが支配する。",
+        "image_path": "bgs_v2/shiten-49c41432-b5dd-4368-ab5f-",
+        "word": "shiten"
+      }
     },
     {
       "question": "市役所",
       "answers": [
         "municipal office",
         "city hall"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A bustling view of a modern-architecture city hall (shiyakusho) in Japan, with a sleek glass façade and flags fluttering at the entrance. People in official and casual attire are seen entering and exiting the building, attending to civic duties. Cherry blossoms surround the area, adding a touch of tradition to the modern setting. On the right side of the image, a formidable city official in a crisp suit stands purposefully, symbolizing civic duty and community leadership.",
+        "scene_text_en": "In the heart of civic life, responsibilities and community converge.",
+        "scene_text_jp": "市民生活の中心で、責任とコミュニティが交差する。",
+        "image_path": "bgs_v2/shiyakusho-f6f951f4-4b12-420b-b32e-",
+        "word": "shiyakusho"
+      }
     },
     {
       "question": "外食",
       "answers": [
         "eating out",
         "dining out"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant Japanese izakaya (pub) setting, with warm lighting and wooden interiors, bustling with patrons enjoying food and drinks. The counter is adorned with various small dishes, sake bottles, and chopsticks neatly arranged. Laughter and chatter fill the space, creating a lively and inviting atmosphere. On the right side of the image, a formidable chef in traditional attire stands by the counter, watching over the scene, symbolizing culinary expertise and hospitality.",
+        "scene_text_en": "Where flavors and laughter intertwine, a memorable experience unfolds.",
+        "scene_text_jp": "味と笑いが交わる場所で、忘れられない体験が広がる。",
+        "image_path": "bgs_v2/gaishoku-8212034e-70db-494b-802a-",
+        "word": "gaishoku"
+      }
     },
     {
       "question": "景気",
       "answers": [
         "business condition"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "An idyllic view of a serene Japanese countryside in spring, with lush green rice paddies, colorful flower fields, and distant rolling hills. The sun is setting, casting a golden hue across the landscape. Amidst the scenery, there's a quaint farmhouse with smoke gently rising from the chimney. On the right side of the image, a formidable farmer in traditional attire stands with a hoe, symbolizing hard work and the beauty of a simple life.",
+        "scene_text_en": "In the embrace of nature's bounty, simplicity and contentment thrive.",
+        "scene_text_jp": "自然の恵みの中で、簡素さと満足が育まれる。",
+        "image_path": "bgs_v2/keiki-7fdcf5de-ca89-429a-8597-",
+        "word": "keiki"
+      }
     },
     {
       "question": "食物",
       "answers": [
         "food",
         "foodstuff"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant Japanese food market (shokumotsu) setting, where various stalls are brimming with fresh seafood, colorful vegetables, and other local produce. The hustle and bustle of the market is apparent, with vendors calling out to customers and people perusing the stalls for the best ingredients. The air is filled with a mix of tantalizing aromas. On the right side of the image, a formidable market vendor in traditional attire stands proudly behind his stall, symbolizing the essence of food and tradition.",
+        "scene_text_en": "Amid a swirl of vibrant colors and tantalizing aromas, the essence of tradition and nourishment thrives.",
+        "scene_text_jp": "鮮やかな色彩と魅惑的な香りが渦巻く中で、伝統と滋養の本質が息づく。",
+        "image_path": "bgs_v2/shokumotsu-e633ea8c-1883-4164-9f8e-",
+        "word": "shokumotsu"
+      }
     },
     {
       "question": "特徴",
       "answers": [
         "feature",
         "trait"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A mesmerizing Japanese autumn forest with maple trees showcasing vivid red and orange leaves. A serene path winds through the dense foliage, leading to a quaint teahouse nestled among the trees. The ground is a carpet of fallen leaves, and the air is crisp. On the right side of the image, a formidable monk in traditional robes stands with a staff, symbolizing wisdom and the changing seasons.",
+        "scene_text_en": "In the midst of vibrant transformation, wisdom and reflection abound.",
+        "scene_text_jp": "鮮やかな変化の中で、知恵と省察が満ちる。",
+        "image_path": "bgs_v2/tokuchou-416c5878-23e2-47be-b27e-",
+        "word": "tokuchou"
+      }
     },
     {
       "question": "調子",
@@ -200,26 +269,1047 @@
         "tone",
         "condition",
         "health"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A mesmerizing view of Choshi in autumn, where the Tone River meets the Pacific Ocean. The sun is setting, casting a beautiful orange and purple hue across the sky and reflecting on the water. Traditional boats are gently floating on the water, and the iconic Choshi Port Tower is visible in the distance. On the right side of the image, a formidable fisherman in traditional attire stands proudly with a fishing net over his shoulder, symbolizing the connection between the sea and the community.",
+        "scene_text_en": "Where the river meets the ocean, a lifeline for many thrives with pride and tradition.",
+        "scene_text_jp": "川が海に出会う場所で、多くの命綱が誇りと伝統とともに息づく。",
+        "image_path": "bgs_v2/choushi-441dd0be-ec18-4ee3-88c1-",
+        "word": "choushi"
+      }
     },
     {
       "question": "上",
       "answers": [
         "person of high rank",
         "government"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A mystical Japanese Shinto shrine nestled within an ancient forest. Torii gates line the approach to the shrine, with sacred shimenawa ropes and paper shide streamers, surrounded by tall, majestic cedar trees. The shrine itself is tranquil and exudes a spiritual aura, with lanterns casting a soft, warm light. On the right side of the image, a formidable Shinto priest in traditional hakama holds a gohei (sacred wand), symbolizing the connection with spirits and the divine.",
+        "scene_text_en": "Amidst ancient trees and sacred grounds, the divine presence is deeply felt.",
+        "scene_text_jp": "古代の木々と聖地の中で、神聖な存在が深く感じられる。",
+        "image_path": "bgs_v2/kami-7a0dd40a-3c52-4164-b9fa-",
+        "word": "kami"
+      }
     },
     {
       "question": "好物",
       "answers": [
         "favourite food"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A tranquil Japanese temple garden during a peaceful spring morning. Cherry blossoms are in full bloom, their delicate petals gently falling and covering the ground in a soft pink carpet. A serene koi pond reflects the beauty of the garden, with colorful koi fish gracefully swimming. Traditional stone lanterns and a small bamboo fountain add to the sense of harmony. On the right side of the image, a formidable monk in traditional robes sits in meditation, symbolizing tranquility and enlightenment.",
+        "scene_text_en": "In the serene embrace of nature's bloom, tranquility and enlightenment are sought.",
+        "scene_text_jp": "自然の花の静かな抱擁の中で、静けさと悟りが求められる。",
+        "image_path": "bgs_v2/koubutsu-4f054f53-63c6-40fb-814a-",
+        "word": "koubutsu"
+      }
     },
     {
       "question": "工事",
       "answers": [
         "construction work"
-      ]
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant Japanese street festival during summer at night, lit by colorful lanterns hanging across the street. Stalls offer traditional foods and games, with cheerful people in yukata (summer kimonos) enjoying the lively atmosphere. Fireworks light up the sky, adding to the festive mood. On the right side of the image, a formidable street performer in vibrant attire juggles flaming torches, symbolizing excitement and celebration.",
+        "scene_text_en": "Under the festive lights and fireworks, a dazzling display of skill and joy captivates all.",
+        "scene_text_jp": "祭りの光と花火の下で、華やかな技と喜びがすべてを魅了する。",
+        "image_path": "bgs_v2/kouji-7bad4773-a89e-4948-b67e-",
+        "word": "kouji"
+      }
+    },
+    {
+      "question": "誕生",
+      "answers": [
+        "birth",
+        "creation"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese house on the morning of a baby's first birthday celebration. Family members are gathered around a large tatami mat, with colorful decorations and traditional gifts such as kimonos and toys around. A cake with a single candle is in the center, symbolizing the child's first year. On the right side of the image, a formidable family elder in traditional attire holds a ceremonial fan, symbolizing the passage of life and blessings.",
+        "scene_text_en": "With heartfelt joy and colorful traditions, a special milestone is warmly celebrated.",
+        "scene_text_jp": "心からの喜びと色とりどりの伝統で、特別な節目が温かく祝われる。",
+        "image_path": "bgs_v2/tanjou-e4226d27-e5cf-4c5e-a38a-",
+        "word": "tanjou"
+      }
+    },
+    {
+      "question": "当日",
+      "answers": [
+        "appointed day",
+        "very day"
+      ],
+      "data": {
+        "dalle_prompt": "A beautifully scenic Japanese countryside during the autumn harvest season. Golden rice fields stretch out under a crisp blue sky, with the surrounding trees displaying vibrant autumn colors. Farmers are seen harvesting rice and preparing for the festival. Traditional scarecrows are placed in the fields. On the right side of the image, a formidable elder farmer, holding a traditional sickle, stands composed and proud, symbolizing hard work and gratitude.",
+        "scene_text_en": "In the golden fields under the autumn sky, each grain echoes the toil and gratitude of the harvest.",
+        "scene_text_jp": "秋の空の下の黄金の田んぼで、一粒一粒が収穫の苦労と感謝を響かせる。",
+        "image_path": "bgs_v2/toujitsu-023746c9-84dd-4038-b710-",
+        "word": "toujitsu"
+      }
+    },
+    {
+      "question": "温める",
+      "answers": [
+        "to warm",
+        "to heat"
+      ],
+      "data": {
+        "dalle_prompt": "A peaceful Japanese onsen (hot spring) nestled in a mountainous landscape during the winter. Steam rises from the warm, inviting waters surrounded by snow-covered rocks and trees. A wooden path leads to the hot spring, flanked by traditional lanterns. On the right side of the image, a formidable samurai warrior in full traditional armor stands guard, symbolizing protection and calm.",
+        "scene_text_en": "Amidst the steaming waters and snow-capped tranquility, a guardian stands ever watchful.",
+        "scene_text_jp": "湯気の立ち込める湯と雪に覆われた静けさの中で、守護者は常に警戒を怠らない。",
+        "image_path": "bgs_v2/atatameru-4a2894f9-ccf2-4c3a-9280-",
+        "word": "atatameru"
+      }
+    },
+    {
+      "question": "平日",
+      "answers": [
+        "weekday",
+        "ordinary days"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling street scene in modern-day Tokyo on a typical weekday. Office workers in suits hurry along the sidewalks, while bright advertisements and neon signs light up the buildings. Commuters pass through a busy crosswalk, and vending machines line the streets. On the right side of the image, a formidable salaryman in a suit and tie stands with a briefcase, symbolizing dedication and the daily grind.",
+        "scene_text_en": "In the heart of the metropolis, the rush of the day never falters, driven by relentless dedication.",
+        "scene_text_jp": "都会の中心で、一日の急ぎは揺るぎない献身に駆り立てられる。",
+        "image_path": "bgs_v2/heijitsu-d3fef778-e489-41c2-80ba-",
+        "word": "heijitsu"
+      }
+    },
+    {
+      "question": "曇",
+      "answers": [
+        "cloudiness",
+        "cloudy weather"
+      ],
+      "data": {
+        "dalle_prompt": "A beautiful Japanese garden during a light drizzle. The intricate landscape features a koi pond, elegant stone lanterns, and a traditional wooden bridge. Soft rain creates ripples in the pond, and droplets hang from the lush greenery. On the right side of the image, a formidable monk in a raincoat, holding an umbrella, watches over the serene scenery, symbolizing tranquility and mindfulness.",
+        "scene_text_en": "In the gentle veil of rain, the garden whispers secrets of serenity.",
+        "scene_text_jp": "やわらかな雨に包まれて、庭は静寂の秘密をささやく。",
+        "image_path": "bgs_v2/kumori-99471b32-f69c-4241-87d2-",
+        "word": "kumori"
+      }
+    },
+    {
+      "question": "食う",
+      "answers": [
+        "to eat"
+      ],
+      "data": {
+        "dalle_prompt": "A peaceful Japanese coastal village under a full moon, with traditional wooden houses and fishing boats anchored by the shore. The sea is calm, reflecting the moonlight, and wisps of clouds float across the night sky. On the right side of the image, a formidable fisherman in traditional attire stands by his boat, symbolizing resilience and the village's connection to the sea.",
+        "scene_text_en": "Under the moonlit sky, the village breathes in rhythm with the ocean.",
+        "scene_text_jp": "月明かりの夜空の下で、村は海とリズムを共にしている。",
+        "image_path": "bgs_v2/kuu-d5b8325b-7c6f-4c05-838f-",
+        "word": "kuu"
+      }
+    },
+    {
+      "question": "医師",
+      "answers": [
+        "doctor",
+        "physician"
+      ],
+      "data": {
+        "dalle_prompt": "A picturesque Japanese mountain village nestled deep in the valley, featuring traditional thatched-roof houses and clear streams flowing from the mountains. The autumn colors of red and gold leaves cascade down the mountainside. On the right side of the image, a formidable elderly stonemason stands near a stone statue he is carving, symbolizing enduring craftsmanship and the fusion of nature and human effort.",
+        "scene_text_en": "In the embrace of autumn mountains, the stonemason's work etches a timeless story.",
+        "scene_text_jp": "秋の山々に抱かれて、石工の仕事は永遠の物語を刻む。",
+        "image_path": "bgs_v2/ishi-a96bc57d-8866-4b3a-8c3d-",
+        "word": "ishi"
+      }
+    },
+    {
+      "question": "家事",
+      "answers": [
+        "housework"
+      ],
+      "data": {
+        "dalle_prompt": "A dramatic Japanese landscape with a majestic volcano standing tall against the horizon. The sky is painted with fiery hues of amber and crimson as the sun sets. In the foreground, traditional Torii gates lead up a stone pathway towards the volcano. On the right side of the image, a formidable Samurai warrior, clad in full armor, stands vigilant, symbolizing strength and protection.",
+        "scene_text_en": "As the fiery sky reflects the distant mountain, a guardian stands firm against the blaze.",
+        "scene_text_jp": "燃える空が遠くの山を映し出すとき、守護者は炎に立ち向かう。",
+        "image_path": "bgs_v2/kaji-1144c48d-35a3-4e59-8052-",
+        "word": "kaji"
+      }
+    },
+    {
+      "question": "健康",
+      "answers": [
+        "health"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese zen garden with meticulously raked gravel patterns, moss-covered stones, and a koi pond under a clear blue sky. Cherry blossom petals are scattered around, giving a sense of calm and purity. On the right side of the image, a formidable monk in traditional robe stands with a staff, symbolizing inner peace and harmony.",
+        "scene_text_en": "Amidst the tranquil patterns and soothing waters, inner balance is maintained.",
+        "scene_text_jp": "静寂な模様と心地よい水の中で、内なるバランスが保たれる。",
+        "image_path": "bgs_v2/kenkou-3c795881-0c64-4458-96a5-",
+        "word": "kenkou"
+      }
+    },
+    {
+      "question": "共通点",
+      "answers": [
+        "point in common",
+        "common feature"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling Japanese cityscape with towering skyscrapers, flashing neon signs, and busy crosswalks alive with people. The iconic Tokyo Tower pierces the night sky, bathed in lights. On the right side of the image, a formidable technomancer in futuristic attire stands with a digital scroll, symbolizing the blending of ancient and modern knowledge.",
+        "scene_text_en": "Where old meets new, the vibrant pulse of the city connects all things.",
+        "scene_text_jp": "古きものと新しきものが交わる場所、都市の力強い脈動がすべてを繋げる。",
+        "image_path": "bgs_v2/kyoutsuuten-70404cc5-a0fe-42cf-af90-",
+        "word": "kyoutsuuten"
+      }
+    },
+    {
+      "question": "扱う",
+      "answers": [
+        "to deal with",
+        "to treat"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese market scene with colorful stalls selling fresh produce, fish, and handmade crafts under a sky dotted with fluffy white clouds. Lively lanterns hang above, casting a warm glow on the scene. On the right side of the image, a formidable merchant in traditional attire stands behind a well-stocked stall, symbolizing abundance and the art of trade.",
+        "scene_text_en": "In a world teeming with life, the essence of exchange thrives in every corner.",
+        "scene_text_jp": "生命に満ちた世界で、交換の本質があらゆる隅々に息づいている。",
+        "image_path": "bgs_v2/atsukau-36e9547a-e187-4936-9e25-",
+        "word": "atsukau"
+      }
+    },
+    {
+      "question": "博士",
+      "answers": [
+        "doctorate"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese university campus with beautiful traditional architecture, including wooden buildings and stone pathways lined with cherry blossom trees in full bloom. Students are scattered across the lawn, engaging in animated discussions and study sessions. On the right side of the image, a formidable professor in a formal academic gown stands with a manuscript, symbolizing wisdom and intellectual pursuit.",
+        "scene_text_en": "Among blossoming minds and ancient wisdom, knowledge flourishes under every petal.",
+        "scene_text_jp": "咲き誇る心と古の知恵の中で、知識は花びらの下に繁栄する。",
+        "image_path": "bgs_v2/hakase-84a399a8-052e-4fd6-b767-",
+        "word": "hakase"
+      }
+    },
+    {
+      "question": "一家",
+      "answers": [
+        "a house",
+        "a home"
+      ],
+      "data": {
+        "dalle_prompt": "A tranquil Japanese Shinto shrine set in a dense forest, with large torii gates marking the entrance and paper lanterns illuminating the path. A gentle stream flows nearby, reflecting the lanterns' light. On the right side of the image, a formidable priest in traditional attire stands with an ofuda (a talisman), symbolizing spiritual protection and the connection to the divine.",
+        "scene_text_en": "Where the divine whispers through the trees, protection and serenity are gifted to all.",
+        "scene_text_jp": "神聖なものが木々を通して囁く場所、守護と静けさがすべての人に授けられる。",
+        "image_path": "bgs_v2/ikka-ef738de8-ef53-48aa-a119-",
+        "word": "ikka"
+      }
+    },
+    {
+      "question": "事務室",
+      "answers": [
+        "office"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling Japanese office scene with modern furniture, computers, and large windows showing a cityscape. The room is filled with diligent workers, typing at their desks and discussing projects. On the right side of the image, a formidable office manager in a sharp suit stands with a set of important documents, symbolizing organization and control.",
+        "scene_text_en": "In the heart of urban life, where efficiency and order shape the world.",
+        "scene_text_jp": "都会の生活の中で、効率と秩序が世界を形作る。",
+        "image_path": "bgs_v2/jimushitsu-171e5cd1-90b6-489e-8328-",
+        "word": "jimushitsu"
+      }
+    },
+    {
+      "question": "職",
+      "answers": [
+        "job",
+        "work",
+        "employment"
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant Japanese marketplace filled with a variety of stalls and shops selling fresh seafood, vegetables, traditional snacks, and colorful fabrics. People are bustling around, engaging in lively negotiations and enjoying street food. On the right side of the image, a formidable vendor in a traditional headscarf stands proudly with a tray of sushi, symbolizing the essence of local cuisine.",
+        "scene_text_en": "Amidst the lively banter and flavors, the heart of culture and taste comes alive.",
+        "scene_text_jp": "賑やかな掛け合いと風味の中で、文化と味覚の中心が躍動する。",
+        "image_path": "bgs_v2/shoku-1e655d84-628d-4569-b358-",
+        "word": "shoku"
+      }
+    },
+    {
+      "question": "前日",
+      "answers": [
+        "previous day",
+        "day before"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese tea garden with meticulously pruned bonsai trees, a tranquil koi pond, and a traditional tea house. Delicate cherry blossoms fall gently around the setting. On the right side of the image, a formidable tea master in a kimono is kneeling with a tea whisk and bowl, symbolizing the art of tea and mindfulness.",
+        "scene_text_en": "Where patience and precision create moments of peace and harmony.",
+        "scene_text_jp": "忍耐と精密さが平和と調和の瞬間を生み出す場所。",
+        "image_path": "bgs_v2/zenjitsu-03adc670-7ff0-4ccc-9a5c-",
+        "word": "zenjitsu"
+      }
+    },
+    {
+      "question": "努力",
+      "answers": [
+        "great effort",
+        "exertion"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese dojo, with tatami mats, wooden training weapons, and calligraphy banners. The walls display historic samurai armor and katanas. On the right side of the image, a formidable sensei in traditional martial arts attire stands with a stern expression, symbolizing dedication and effort.",
+        "scene_text_en": "In the hall of perseverance, strength and discipline are forged.",
+        "scene_text_jp": "忍耐の館で、強さと規律が鍛えられる。",
+        "image_path": "bgs_v2/doryoku-6d43d06b-4668-490d-b9a3-",
+        "word": "doryoku"
+      }
+    },
+    {
+      "question": "実施",
+      "answers": [
+        "enforcement; implementation; putting into practice; carrying out; operation; working"
+      ],
+      "data": {
+        "dalle_prompt": "A serene scene of a traditional Japanese temple surrounded by lush greenery. Lanterns are hung along the temple's path, and a gentle stream runs nearby. People are quietly praying and making offerings. On the right side of the image, a formidable monk in traditional robes stands holding a prayer bead, symbolizing spirituality and tradition.",
+        "scene_text_en": "In the embrace of nature, the spirit seeks tranquility and connection.",
+        "scene_text_jp": "自然の中で、心は静けさと繋がりを求める。",
+        "image_path": "bgs_v2/jisshi-79a526ac-ddc9-4f23-952b-",
+        "word": "jisshi"
+      }
+    },
+    {
+      "question": "故郷",
+      "answers": [
+        "home town",
+        "birthplace"
+      ],
+      "data": {
+        "dalle_prompt": "An ancient Japanese village set in a picturesque valley, with traditional wooden houses and rice paddies. Mist rises from the surrounding mountains, and villagers are engaged in daily activities. On the right side of the image, a formidable village elder in traditional attire watches over with a wise expression, symbolizing guardianship and heritage.",
+        "scene_text_en": "Where roots run deep, the strength of unity and heritage flourishes.",
+        "scene_text_jp": "根が深く広がり、団結と伝統の力が繁栄する場所。",
+        "image_path": "bgs_v2/kokyou-c9b31b03-03bf-4cd3-939a-",
+        "word": "kokyou"
+      }
+    },
+    {
+      "question": "陽気",
+      "answers": [
+        "weather",
+        "cheerful"
+      ],
+      "data": {
+        "dalle_prompt": "A mystical Japanese forest filled with towering trees and a sense of ancient magic. Among the trees, delicate youkai (spirit) creatures peek out, their ethereal forms blending with the mist. On the right side of the image, a formidable warrior adorned in ancient samurai armor stands guard, symbolizing protection against supernatural forces.",
+        "scene_text_en": "In the enchanted forest, mystery and the supernatural dance under the moonlight.",
+        "scene_text_jp": "魔法の森で、神秘と超自然が月光の下で踊る。",
+        "image_path": "bgs_v2/youki-59cfc64a-5c71-4778-8d24-",
+        "word": "youki"
+      }
+    },
+    {
+      "question": "昼食",
+      "answers": [
+        "lunch",
+        "midday meal"
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant Japanese marketplace during lunchtime, with street vendors offering various traditional dishes such as sushi, tempura, and ramen. The colorful stalls are bustling with people enjoying their meals. On the right side of the image, a formidable chef in traditional Japanese attire stands proudly with a cooking knife, symbolizing culinary craftsmanship and flavor.",
+        "scene_text_en": "Amid the hustle and bustle, the flavors of tradition come to life at midday.",
+        "scene_text_jp": "喧騒の中で、伝統の味が正午に生き生きと感じられる。",
+        "image_path": "bgs_v2/chuushoku-1eb89d53-9455-492b-8e9f-",
+        "word": "chuushoku"
+      }
+    },
+    {
+      "question": "ぐっすり",
+      "answers": [
+        "sound sleep"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese garden illuminated by gentle lanterns at dusk. The garden features a koi pond, neatly trimmed bonsai trees, and a small traditional tea house where steam rises from hot tea. On the right side of the image, a formidable monk in peaceful meditation pose symbolizes tranquility and restful slumber.",
+        "scene_text_en": "As night falls, calm and restful energies flow throughout this tranquil oasis.",
+        "scene_text_jp": "夜が訪れると、静かで安らかなエネルギーがこの静かな楽園に広がる。",
+        "image_path": "bgs_v2/gussuri-1a2f5aee-363f-45d5-8e41-",
+        "word": "gussuri"
+      }
+    },
+    {
+      "question": "労働",
+      "answers": [
+        "manual labor",
+        "work"
+      ],
+      "data": {
+        "dalle_prompt": "A little bustling factory in rural Japan. The factory is filled with antique machinery and wooden beam structures. Workers are busy in traditional attire, focusing intently on their tasks. On the right side of the image, a formidable foreman wearing a traditional cotton headband stands with a clipboard, symbolizing efficiency and hard work.",
+        "scene_text_en": "In the heart of the village, hands and machines move in sync, driven by unyielding dedication.",
+        "scene_text_jp": "村の中心で、手と機械が一体となり、揺るぎない献身に動かされている。",
+        "image_path": "bgs_v2/roudou-0967a4fa-452b-4aa7-aa97-",
+        "word": "roudou"
+      }
+    },
+    {
+      "question": "沸騰",
+      "answers": [
+        "boiling",
+        "becoming heated"
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant Japanese onsen (hot spring) surrounded by lush greenery and steam rising from the natural hot water. The traditional onsen bathhouse is made of wood, and there's a sense of relaxation and rejuvenation. On the right side of the image, a formidable bathhouse attendant in traditional yukata stands with a wooden bucket, symbolizing the essence of comfort and wellness.",
+        "scene_text_en": "Where boiling waters embrace, a sanctuary of warmth and serenity awaits.",
+        "scene_text_jp": "沸騰する水が迎える場所、温もりと静けさの楽園が待っている。",
+        "image_path": "bgs_v2/futtou-f4b4b459-f685-46f9-9193-",
+        "word": "futtou"
+      }
+    },
+    {
+      "question": "飲料",
+      "answers": [
+        "beverage",
+        "drink"
+      ],
+      "data": {
+        "dalle_prompt": "A picturesque Japanese mountain vineyard at dawn. Rows of grapevines stretch out over the rolling hills, and the vines are heavy with ripe grapes ready for harvesting. A traditional Japanese farmhouse stands in the background. On the right side of the image, a formidable vintner in traditional farming attire stands with a basket full of grapes, symbolizing the meticulous craft of winemaking.",
+        "scene_text_en": "In these elevated swathes, clusters of nature’s essence await their journey in glass.",
+        "scene_text_jp": "この高地の広がりでは、自然の精髄がグラスへの旅を待っている。",
+        "image_path": "bgs_v2/inryou-bb35095b-e240-47df-8fe0-",
+        "word": "inryou"
+      }
+    },
+    {
+      "question": "先日",
+      "answers": [
+        "the other day"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese Zen garden during early autumn, with maple leaves starting to turn red and gold. The garden features meticulously raked gravel, stone lanterns, and a small koi pond. On the right side of the image, a formidable Zen monk in traditional robes stands with a rake, symbolizing tranquility and mindfulness.",
+        "scene_text_en": "Within stillness, the essence of the ancient philosophy is carefully combed into the ground.",
+        "scene_text_jp": "静けさの中で、古代の哲学の本質が地面に注意深くかき集められている。",
+        "image_path": "bgs_v2/senjitsu-17522485-f2a2-45c1-9a54-",
+        "word": "senjitsu"
+      }
+    },
+    {
+      "question": "同僚",
+      "answers": [
+        "coworker",
+        "colleague"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling Japanese train station during rush hour with sleek trains arriving and departing from the platforms. People are hurriedly moving about, but there's an order to the chaos. Overhead signs and timetable displays buzz with information. On the right side of the image, a formidable station master in a neat uniform stands, overseeing the organized madness, symbolizing efficiency and punctuality.",
+        "scene_text_en": "Amid the orchestrated rush, precision and timing guide the flow of travelers.",
+        "scene_text_jp": "その整然とした喧騒の中で、正確さと時間が旅人の流れを導く。",
+        "image_path": "bgs_v2/douryou-58be4a61-ba63-46f6-9a28-",
+        "word": "douryou"
+      }
+    },
+    {
+      "question": "劇場",
+      "answers": [
+        "theater"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese Noh theater, with an intricately designed wooden stage and vibrant red curtains. The audience is in shadow, emphasizing the stage. On the right side of the image, a formidable Noh actor wearing an elaborate, masked costume stands ready to perform, symbolizing the rich history and artistry of Japanese theater.",
+        "scene_text_en": "In the sacred space of shadows and light, stories transcend time through masks and movement.",
+        "scene_text_jp": "光と影の聖域で、物語は仮面と動きを通して時間を超える。",
+        "image_path": "bgs_v2/gekijou-f60beda1-1c9d-4c95-829e-",
+        "word": "gekijou"
+      }
+    },
+    {
+      "question": "羽",
+      "answers": [
+        "feather",
+        "down"
+      ],
+      "data": {
+        "dalle_prompt": "A tranquil mountainous Japanese landscape in early spring, with cherry blossoms beginning to bloom and petals floating gently in the air. Traditional wooden houses are nestled among the trees, with a small river running through the scene. On the right side of the image, a formidable samurai in full armor stands, holding a beautiful fan delicately, symbolizing elegance and resilience.",
+        "scene_text_en": "Among the blossoms, grace and strength flutter on the breeze, guiding with gentle mastery.",
+        "scene_text_jp": "花の中で、優雅さと強さが風に舞い、優しく導く.",
+        "image_path": "bgs_v2/hane-5e4de2f5-699c-4a97-a2ee-",
+        "word": "hane"
+      }
+    },
+    {
+      "question": "営業",
+      "answers": [
+        "business",
+        "trade"
+      ],
+      "data": {
+        "dalle_prompt": "A busy urban street in a Japanese city with neon-lit buildings and bustling shops. Bright banners and advertisements light up the evening sky. People are seen walking and interacting, clad in a mix of traditional and modern attire. On the right side of the image, a formidable businessman in a crisp suit stands confidently, holding a briefcase, symbolizing dedication and ambition.",
+        "scene_text_en": "In the dance of lights and ambition, the heart of commerce pulses with unyielding drive.",
+        "scene_text_jp": "光と野心のダンスの中で、商業の心臓は不屈の意志で鼓動する。",
+        "image_path": "bgs_v2/eigyou-74446bad-6591-4e38-b7a6-",
+        "word": "eigyou"
+      }
+    },
+    {
+      "question": "日夜",
+      "answers": [
+        "day and night",
+        "always",
+        "constantly"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese night street scene, illuminated by traditional paper lanterns and a canopy of stars above. The quiet street is lined with old wooden houses and a small Shinto shrine at the end. On the right side of the image, a formidable figure dressed as a Shinto priest, holding a sacred staff, stands under a glowing lantern, symbolizing reverence and the beauty of the night.",
+        "scene_text_en": "Under the gentle glow of the lanterns, the sacred night whispers its ancient tales.",
+        "scene_text_jp": "提灯の優しい光の下で、聖なる夜は古代の物語をささやく。",
+        "image_path": "bgs_v2/nichiya-4c41fc86-ada7-4649-8e9d-",
+        "word": "nichiya"
+      }
+    },
+    {
+      "question": "頻りに",
+      "answers": [
+        "frequently",
+        "repeatedly"
+      ],
+      "data": {
+        "dalle_prompt": "A picturesque Japanese hot spring (onsen) setting, with steam rising from the natural pools surrounded by lush greenery and rocks. Traditional wooden buildings overlook the serene scene, and the early morning light creates a tranquil atmosphere. On the right side of the image, a formidable figure wearing a traditional yukata stands beside the steaming water, holding a folded towel, symbolizing tranquility and resilience.",
+        "scene_text_en": "Amidst the steam, the essence of serenity and strength prepares for a new dawn.",
+        "scene_text_jp": "湯気の中で、静けさと強さの本質が新しい夜明けの準備をする。",
+        "image_path": "bgs_v2/shikiri-ni-f7c3a74c-6a76-4703-af9a-",
+        "word": "shikiri ni"
+      }
+    },
+    {
+      "question": "座席",
+      "answers": [
+        "seat"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese tea room with tatami mats and sliding shoji doors. The room is minimalistic, decorated with a single flower arrangement and a hanging scroll. A low table with tea utensils is placed in the center of the room. On the right side of the image, a formidable tea master in a graceful kimono kneels beside the table, holding a bamboo whisk, symbolizing focus and the art of tea. One prominent empty seat (zaseki) is at the table.",
+        "scene_text_en": "In the tranquil silence, the empty seat invites a journey through delicate flavors and profound mindfulness.",
+        "scene_text_jp": "静寂の中で、空席が繊細な味わいと深い心の旅に誘う。",
+        "image_path": "bgs_v2/zaseki-85a6827b-7d24-4f9a-a91f-",
+        "word": "zaseki"
+      }
+    },
+    {
+      "question": "働き",
+      "answers": [
+        "work",
+        "labor"
+      ],
+      "data": {
+        "dalle_prompt": "A scenic rice field during planting season in rural Japan, with lush green paddies extending into the horizon. Farmers in traditional attire are scattered across the fields, bent over in the planting process. The distant mountains provide a peaceful backdrop. On the right side of the image, a formidable figure dressed in traditional farming garb holds a bundle of rice seedlings and gazes over the field, symbolizing hard work and the cycle of life.",
+        "scene_text_en": "In the rhythm of the fields, each seedling planted is a testament to dedication and life's continuity.",
+        "scene_text_jp": "田んぼのリズムの中で、一つ一つの苗は献身と生命の継続の証である。",
+        "image_path": "bgs_v2/hataraki-438cee18-20bd-4fea-922f-",
+        "word": "hataraki"
+      }
+    },
+    {
+      "question": "今日",
+      "answers": [
+        "this day",
+        "these days",
+        "recently"
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant Shinto shrine during a traditional festival, with bright red torii gates, colorful lanterns, and worshippers in yukata. The shrine is surrounded by cherry blossom trees in full bloom, adding a sense of festivity and tradition. On the right side of the image, a formidable priest in ceremonial robes stands by the torii gate, holding a wooden staff, symbolizing reverence and cultural pride.",
+        "scene_text_en": "As cherry blossoms flutter, the vibrant celebration bridges the ancient and the present, embodying reverence in each step.",
+        "scene_text_jp": "桜が舞い散る中で、鮮やかな祝祭は古代と現代をつなぎ、各々の歩みで敬意を体現している。",
+        "image_path": "bgs_v2/konnichi-a8740fd3-ccd4-4507-9ac6-",
+        "word": "konnichi"
+      }
+    },
+    {
+      "question": "作業",
+      "answers": [
+        "work",
+        "operation"
+      ],
+      "data": {
+        "dalle_prompt": "A quiet Japanese craftsman workshop, where intricate woodwork and paper crafts are created. The walls are adorned with finished pieces displaying exquisite craftsmanship. In the center, a craftsman’s table is equipped with tools, wood blocks, and sheets of washi paper. On the right side of the image, a formidable master craftsman in traditional attire intently carves a piece of wood, symbolizing dedication and precision in traditional craft. The room is bathed in warm, natural light.",
+        "scene_text_en": "In the intimate workshop, every carved detail echoes the patience and precision nurtured through skilled hands.",
+        "scene_text_jp": "親しみやすい作業場で、彫られた一つ一つの細部は熟練の手から育まれた忍耐と正確さを響かせている。",
+        "image_path": "bgs_v2/sagyou-07dde947-f954-47be-828c-",
+        "word": "sagyou"
+      }
+    },
+    {
+      "question": "花火",
+      "answers": [
+        "fireworks"
+      ],
+      "data": {
+        "dalle_prompt": "A breathtaking summer night scene during a hanabi (fireworks) festival in Japan. The sky is illuminated with an array of vibrant fireworks bursting in patterns, reflected on a nearby river. The crowd in yukata is gathered along the riverbank, watching in awe. Lantern-lit food stalls line the opposite bank, adding to the festive atmosphere. On the right side of the image, a formidable figure in traditional yukata, holding a fan and gazing at the fireworks with calm determination, symbolizing celebration and ephemeral beauty.",
+        "scene_text_en": "Amidst the night sky's brilliance, fleeting moments of radiance captivate the hearts below.",
+        "scene_text_jp": "夜空の輝きの中で、儚い光の瞬間が人々の心を捉える。",
+        "image_path": "bgs_v2/hanabi-4737dcc4-baff-45ba-9c0c-",
+        "word": "hanabi"
+      }
+    },
+    {
+      "question": "試食",
+      "answers": [
+        "sampling food"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese dining setting showcasing a luxurious kaiseki (multi-course) meal. The table is beautifully set with various dishes artistically presented on fine porcelain and lacquerware, featuring seasonal ingredients. The ambiance is cozy yet elegant, with soft lighting accentuating the meticulous details of each dish. On the right side of the image, a formidable chef in traditional attire carefully places the final touch on a dish, symbolizing culinary mastery and perfectionism.",
+        "scene_text_en": "With each course, artistry and flavor merge, transforming seasonal ingredients into a symphony for the senses.",
+        "scene_text_jp": "一品一品に、芸術と風味が融合し、季節の素材が感覚の交響曲に変わる。",
+        "image_path": "bgs_v2/shishoku-c8667d89-c12b-4a9d-a860-",
+        "word": "shishoku"
+      }
+    },
+    {
+      "question": "職場",
+      "answers": [
+        "place of work",
+        "workplace"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling Japanese office space with modern cubicles, desks filled with computers, papers, and office supplies. The room is illuminated by fluorescent lights, and there are windows showing a city skyline in the background. Employees in suits and business attire are engaged in their tasks, some collaborating at desks, others focused on their computer screens. On the right side of the image, a formidable office manager in a sharp business suit, holding a clipboard and overseeing the activities with an air of authority, symbolizing leadership and efficiency in the workplace.",
+        "scene_text_en": "Within the structured chaos, diligent efforts shape the foundation of tomorrow's success.",
+        "scene_text_jp": "組織された混沌の中で、勤勉な努力が明日の成功の基盤を築く。",
+        "image_path": "bgs_v2/shokuba-ad271b26-6b00-4408-b3b8-",
+        "word": "shokuba"
+      }
+    },
+    {
+      "question": "徹夜",
+      "answers": [
+        "all night"
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant and lively summer festival scene in a Japanese town during Gion Matsuri. Colorful floats adorned with lanterns and traditional decorations parade through the streets, accompanied by participants in elaborate costumes. The atmosphere is filled with the sounds of traditional music and the murmur of excited crowds. On the right side of the image, a formidable figure named Tetsuya stands confidently in festival attire, carrying a traditional spear, symbolizing culture and community spirit.",
+        "scene_text_en": "Amid joyous celebrations, the heritage and vitality of the town come alive in a dazzling display.",
+        "scene_text_jp": "喜びあふれる祝いの中で、町の遺産と活力がきらびやかに蘇る。",
+        "image_path": "bgs_v2/tetsuya-181fc565-fe6e-4e3b-9d36-",
+        "word": "tetsuya"
+      }
+    },
+    {
+      "question": "勤め",
+      "answers": [
+        "service",
+        "duty",
+        "business"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese Shinto shrine surrounded by a lush forest. The main torii gate stands tall, marking the entrance to the sacred grounds. Stone lanterns line the pebble pathway leading to the main hall, which features traditional architecture with intricately carved wooden details. Cherry blossoms are in full bloom, adding a touch of color to the tranquil scene. On the right side of the image, a formidable monk in traditional robes, holding a shakujo (priest staff), stands watch, symbolizing spiritual guidance and reverence.",
+        "scene_text_en": "Amidst the quietude of nature, the pathway to enlightenment begins with every mindful step.",
+        "scene_text_jp": "自然の静けさの中で、悟りへの道は一歩一歩の心構えから始まる。",
+        "image_path": "bgs_v2/tsutome-f53ba4de-335c-44ed-960a-",
+        "word": "tsutome"
+      }
+    },
+    {
+      "question": "運動会",
+      "answers": [
+        "athletic meet",
+        "sports day"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling Japanese elementary school sports day (undoukai) event. The scene is set on a large school playground, with various sporting events happening simultaneously. Children in colorful sports uniforms are seen participating in races, tug-of-war, and other athletic activities. Parents and teachers cheer enthusiastically from the sidelines, some holding cameras or waving flags. On the right side of the image, a formidable PE teacher in track suit, holding a whistle and stopwatch, oversees the events with keen focus and encouragement, symbolizing dedication and the spirit of sportsmanship.",
+        "scene_text_en": "With every cheer and sprint, the bonds of friendship and the joy of sports are celebrated under the open sky.",
+        "scene_text_jp": "歓声とスプリントのたびに、友情の絆とスポーツの喜びが青空の下で祝われる。",
+        "image_path": "bgs_v2/undoukai-5b7767c3-08ae-4137-99ae-",
+        "word": "undoukai"
+      }
+    },
+    {
+      "question": "現代",
+      "answers": [
+        "nowadays",
+        "modern era"
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant and energetic modern Japanese city scene during a bustling day. Tall skyscrapers covered with neon signs and billboards line the streets, showcasing the hustle and bustle of urban life. People in contemporary clothing move past trendy shops and cafes, with some carrying shopping bags and others chatting on smartphones. The streets are filled with taxis, buses, and bicycles, contributing to the dynamic atmosphere. On the right side of the image, a formidable businessman in a sleek suit, holding a briefcase and a smartphone, stands confidently, symbolizing ambition and progress.",
+        "scene_text_en": "In the heart of the city, where technology meets tradition, dreams are built amidst the concrete jungle.",
+        "scene_text_jp": "都市の中心で、技術と伝統が交わる場所、夢はコンクリートジャングルの中で築かれる。",
+        "image_path": "bgs_v2/gendai-d4668bd4-346e-4559-a580-",
+        "word": "gendai"
+      }
+    },
+    {
+      "question": "干す",
+      "answers": [
+        "to dry",
+        "to drink up"
+      ],
+      "data": {
+        "dalle_prompt": "A mystical hot spring resort (onsen) in rural Japan surrounded by bamboo groves and picturesque mountain scenery. Steam rises from the natural hot spring pools, creating a serene and almost magical atmosphere. Traditional Japanese inns (ryokan) with sliding paper doors and thatched roofs are nestled in the background. Blossoming Japanese maples and stone lanterns decorate the area, adding to the tranquil setting. On the right side of the image, a formidable yukata-clad innkeeper, holding a wooden ladle and wearing a warm smile, stands watch, representing hospitality and tradition.",
+        "scene_text_en": "In the warmth of the natural springs, the spirit of relaxation and rejuvenation flows freely.",
+        "scene_text_jp": "天然温泉の暖かさの中で、リラックスとリフレッシュの精神が自由に流れる。",
+        "image_path": "bgs_v2/hosu-6dc1cebc-3d81-4a34-8460-",
+        "word": "hosu"
+      }
+    },
+    {
+      "question": "丈夫",
+      "answers": [
+        "healthy",
+        "robust",
+        "strong"
+      ],
+      "data": {
+        "dalle_prompt": "A serene and ancient Japanese temple garden during a misty morning. The scene features winding stone paths leading through meticulously manicured bonsai trees, serene koi ponds, and moss-covered stone lanterns. The historic wooden temple itself looms in the background, partially obscured by the morning mist, giving an air of mystery and tranquility. A few Zen monks can be seen performing their morning rituals and meditation. On the right side of the image, a formidable old warrior monk, dressed in traditional robes and carrying a staff, stands silently observing, representing wisdom and discipline.",
+        "scene_text_en": "Through the morning mist, the whispers of history and the essence of calmness intertwine.",
+        "scene_text_jp": "朝の霧の中で、歴史のささやきと落ち着きの本質が交わる。",
+        "image_path": "bgs_v2/joubu-fc8ed01c-b621-460a-9529-",
+        "word": "joubu"
+      }
+    },
+    {
+      "question": "夜間",
+      "answers": [
+        "night",
+        "nighttime"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese kitchen during a serene evening, illuminated by the warm glow of hanging lanterns. The kitchen is filled with polished wooden surfaces, traditional Japanese cookware, and ingredients laid out for a meal. Steam rises gently from a kettle on the stove, filling the air with a sense of homey comfort. Shelves are lined with various teas, spices, and neatly arranged bowls and chopsticks. On the right side of the image, a formidable cook in traditional attire, holding a large yakan (Japanese kettle) and a ladle, stands confidently, symbolizing culinary mastery and hospitality.",
+        "scene_text_en": "In the warmth of the kitchen, the flavors of tradition brew with care and love.",
+        "scene_text_jp": "台所の暖かさの中で、伝統の味わいが心を込めて煮込まれる。",
+        "image_path": "bgs_v2/yakan-056869c8-445d-43ef-b13d-",
+        "word": "yakan"
+      }
+    },
+    {
+      "question": "汗",
+      "answers": [
+        "sweat",
+        "perspiration"
+      ],
+      "data": {
+        "dalle_prompt": "A festival float (dashi) in a bustling Japanese town during a vibrant matsuri (festival) celebration at night. The float is intricately decorated with colorful lanterns, shimmering ornaments, and traditional Japanese motifs. People in traditional festival attire wave and cheer, while street vendors sell various delicious foods. Fireworks light up the sky in a brilliant display. On the right side of the image, a formidable festival leader in traditional festival attire, holding a taiko drum stick and exuding authority, stands proudly, representing celebration and community spirit.",
+        "scene_text_en": "In the heart of the night, the joy of tradition and the unity of the community come alive.",
+        "scene_text_jp": "夜の中心で、伝統の喜びとコミュニティの団結が生き生きとする。",
+        "image_path": "bgs_v2/ase-f27ff223-76b9-4496-803d-",
+        "word": "ase"
+      }
+    },
+    {
+      "question": "過去",
+      "answers": [
+        "the past",
+        "bygone days"
+      ],
+      "data": {
+        "dalle_prompt": "A serene traditional Japanese tea house surrounded by lush bamboo forests during a peaceful mid-morning. The tea house has sliding shoji screens, tatami mats, and a tokonoma (alcove) displaying a beautiful scroll and seasonal flower arrangement. Outside, winding stone paths lead through the dense bamboo, creating a tranquil and secluded atmosphere. Gentle sunlight filters through the bamboo leaves, casting dappled shadows. On the right side of the image, a formidable tea master in traditional attire, holding a chasen (tea whisk) and a chawan (tea bowl), stands attentively, representing precision and the art of tea.",
+        "scene_text_en": "Within the tranquil bamboo sanctuary, the delicate ritual celebrates the passage of time and the art of balance.",
+        "scene_text_jp": "静かな竹の聖域の中で、繊細な儀式が時間の経過とバランスの芸術を祝う。",
+        "image_path": "bgs_v2/kako-7f6a2716-123d-41fe-a017-",
+        "word": "kako"
+      }
+    },
+    {
+      "question": "帰宅",
+      "answers": [
+        "returning home"
+      ],
+      "data": {
+        "dalle_prompt": "A typical suburban neighborhood in Japan during the quiet early evening. The streets are lined with traditional style houses with tiled roofs and small gardens. Cherry blossoms are in bloom, their petals gently wafting through the air. The scene includes bicycles parked by the roadside and a distant view of a Japanese train station. Lanterns begin to illuminate the area with a soft glow. On the right side of the image, a formidable figure dressed in traditional yet casual wear, holding a briefcase and a commuter pass, symbolizes the daily journey and return home.",
+        "scene_text_en": "As evening falls, the journey ends where warmth and rest await.",
+        "scene_text_jp": "夕方が訪れ、旅路は温かさと休息が待つ場所で終わる。",
+        "image_path": "bgs_v2/kitaku-0f28820d-6a4b-4344-8122-",
+        "word": "kitaku"
+      }
+    },
+    {
+      "question": "政府",
+      "answers": [
+        "government",
+        "administration"
+      ],
+      "data": {
+        "dalle_prompt": "A majestic view of the Japanese Seifu mountain range at sunrise, with peaks wrapped in morning mist. The mountains are covered with dense forests, and a serene river flows at their base. Traditional Japanese homes can be seen scattered across the landscape. Sunlight breaks through the mist, casting a golden glow over the scenery. On the right side of the image, a formidable mountaineer in traditional Japanese climbing attire, holding an ice axe and a climbing rope, stands confidently, symbolizing strength and the pursuit of great heights.",
+        "scene_text_en": "At dawn's first light, the towering guardians of time and nature stand watch.",
+        "scene_text_jp": "夜明けの最初の光で、時間と自然のそびえる守護者が見守る。",
+        "image_path": "bgs_v2/seifu-66187cad-1616-44dc-a6df-",
+        "word": "seifu"
+      }
+    },
+    {
+      "question": "大戦",
+      "answers": [
+        "great war",
+        "great battle"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese Dojo at sunset, surrounded by serene cherry blossom trees in full bloom. The dojo is a beautifully crafted wooden structure with sliding shoji doors and a thatched roof. Inside, tatami mats cover the floor, and traditional weapons are displayed on the walls. Through the open doors, a lush garden is visible, bathed in the warm hues of the setting sun. Cherry blossom petals gently fall, adding a sense of tranquility. On the right side of the image, a formidable martial artist in traditional samurai armor, holding a katana, stands with a poised and disciplined stance, representing the essence of martial training and honor.",
+        "scene_text_en": "In the twilight of training, the cherry blossoms witness the warriors' enduring spirit.",
+        "scene_text_jp": "稽古の黄昏には、桜が戦士たちの不屈の精神を見守る。",
+        "image_path": "bgs_v2/taisen-4ab72b5b-c9b8-4f6d-8b75-",
+        "word": "taisen"
+      }
+    },
+    {
+      "question": "繰り返す",
+      "answers": [
+        "to repeat"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese tea house nestled in a tranquil garden, surrounded by vibrant autumn foliage. The tea house is a traditional, finely-crafted wooden structure with sliding shoji doors and a thatched roof. The garden features a small, peaceful koi pond and winding stone paths. Maple leaves, in shades of red and orange, gently fall to the ground. The setting sun casts a warm, golden glow across the entire scene. On the right side of the image, a formidable tea master in flowing traditional attire, holding a tea whisk and a bowl of matcha, stands gracefully, symbolizing the delicate art and ritual of the tea ceremony.",
+        "scene_text_en": "In the cycle of seasons, the hues of autumn paint a tranquil moment of reflection.",
+        "scene_text_jp": "季節の循環の中で、秋の色彩が静かな反映の一瞬を描く。",
+        "image_path": "bgs_v2/kurikaesu-d73ce7a6-bfa3-4dc8-8b75-",
+        "word": "kurikaesu"
+      }
+    },
+    {
+      "question": "入院",
+      "answers": [
+        "hospitalization"
+      ],
+      "data": {
+        "dalle_prompt": "A tranquil Japanese hospital room featuring a comfortable bed with crisp white sheets, a wooden bedside table with a vase of fresh flowers, and a large window overlooking a peaceful garden. The garden is filled with lush greenery and traditional stone lanterns. Sunlight softly filters through, casting a calming light into the room. On the wall, there are traditional Japanese scrolls with nature-themed paintings. On the right side of the image, a formidable doctor in a white coat, holding a clipboard and a stethoscope, stands confidently, representing the care and dedication of the medical profession.",
+        "scene_text_en": "In a haven of healing, the serene view brings solace and hope.",
+        "scene_text_jp": "癒しの安らぎの中で、静かな景色が慰めと希望をもたらす。",
+        "image_path": "bgs_v2/nyuuin-d8d10f08-8948-4ea1-9dd5-",
+        "word": "nyuuin"
+      }
+    },
+    {
+      "question": "職業",
+      "answers": [
+        "occupation",
+        "business"
+      ],
+      "data": {
+        "dalle_prompt": "A traditional Japanese Dojo at sunset, surrounded by serene cherry blossom trees in full bloom. The dojo is a beautifully crafted wooden structure with sliding shoji doors and a thatched roof. Inside, tatami mats cover the floor, and traditional weapons are displayed on the walls. Through the open doors, a lush garden is visible, bathed in the warm hues of the setting sun. Cherry blossom petals gently fall, adding a sense of tranquility. On the right side of the image, a formidable martial artist in traditional samurai armor, holding a katana, stands with a poised and disciplined stance, representing the essence of martial training and honor.",
+        "scene_text_en": "In the twilight of training, the cherry blossoms witness the warriors' enduring spirit.",
+        "scene_text_jp": "稽古の黄昏には、桜が戦士たちの不屈の精神を見守る。",
+        "image_path": "bgs_v2/shokugyou-7da0b68f-1279-4c70-8731-",
+        "word": "shokugyou"
+      }
+    },
+    {
+      "question": "正午",
+      "answers": [
+        "noon",
+        "midday"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling Japanese festival at night, illuminated by vibrant lanterns. Stalls offering traditional food, games, and crafts line the street. People in colorful yukatas mingle and enjoy the festivities. The scene is lively with laughter, sounds of taiko drums, and the soft glow of lanterns creating a magical atmosphere. On the right side of the image, a formidable festival performer in a striking yukata and fox mask, holding a fan, stands gracefully, symbolizing the captivating charm and traditions of Japanese festivals.",
+        "scene_text_en": "Under the night sky, the lights and laughter reveal a hidden wonder.",
+        "scene_text_jp": "夜空の下で、光と笑いが隠れた感動を明らかにする。",
+        "image_path": "bgs_v2/shougo-30e731c7-cd8d-42d2-a2a0-",
+        "word": "shougo"
+      }
+    },
+    {
+      "question": "通勤",
+      "answers": [
+        "commuting to work"
+      ],
+      "data": {
+        "dalle_prompt": "A vibrant and busy Japanese train station during rush hour. The scene is bustling with commuters in their business attire, hurriedly moving through the station. The setting includes rows of ticket gates, information boards, and vending machines. The background shows trains arriving and departing on multiple platforms. The station interior is modern, yet packed with the unique cultural details of Japan. On the right side of the image, a formidable station master in a crisp uniform, holding a baton and a whistle, stands authoritatively, representing the efficiency and order of Japanese public transport.",
+        "scene_text_en": "As the crowd rushes on, the rhythm of the city pulses through every platform.",
+        "scene_text_jp": "人々が急ぐ中、街のリズムが全てのプラットフォームに響き渡る。",
+        "image_path": "bgs_v2/tsuukin-40595261-d28e-47b0-b7f2-",
+        "word": "tsuukin"
+      }
+    },
+    {
+      "question": "事務",
+      "answers": [
+        "business",
+        "office work"
+      ],
+      "data": {
+        "dalle_prompt": "A picturesque gymnasium with a traditional Japanese architectural twist. The gym is spacious with natural wooden floors and large windows letting in ample sunlight. Various modern exercise equipment, including treadmills, weightlifting machines, and yoga mats, are neatly arranged. Japanese cultural elements such as tatami mats, shoji screens, and bonsai trees are incorporated into the decor. On the right side of the image, a formidable fitness instructor in a traditional Japanese hakama mixed with modern athletic wear, holding a bamboo staff, stands ready to guide with a blend of discipline and modern fitness techniques.",
+        "scene_text_en": "In a harmonious blend of old and new, strength and serenity find balance.",
+        "scene_text_jp": "古と新が調和した中で、力と静けさがバランスを見つける。",
+        "image_path": "bgs_v2/jimu-394ded9b-1448-495b-8f73-",
+        "word": "jimu"
+      }
+    },
+    {
+      "question": "呼吸",
+      "answers": [
+        "breathing",
+        "respiration"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese garden featuring a tranquil pond with koi fish, intricate stone pathways, and vibrant cherry blossoms in full bloom. Traditional elements like stone lanterns, wooden bridges, and a tea house in the background add depth to the scene. On the right side of the image, a formidable gardener in traditional attire, holding a rake, stands watchfully, symbolizing the care and tranquility of Japanese gardens.",
+        "scene_text_en": "In the stillness of nature, every breath brings a subtle whisper of beauty.",
+        "scene_text_jp": "自然の静けさの中で、息をするたびに美しさがそっとささやく。",
+        "image_path": "bgs_v2/kokyuu-982ffa70-1e90-4e9c-aac3-",
+        "word": "kokyuu"
+      }
+    },
+    {
+      "question": "出張",
+      "answers": [
+        "official tour",
+        "business trip"
+      ],
+      "data": {
+        "dalle_prompt": "An intricate Japanese office space, modern yet infused with traditional elements. High-rise windows let in city views, with sleek desks and advanced technology contrasting with tatami mats and hanging scrolls. A video conference screen displays international colleagues while papers and books are neatly arranged. On the right side of the image, a formidable executive in a business suit, holding a briefcase and a laptop, stands ready for an important trip, symbolizing the importance of business travel in Japanese corporate culture.",
+        "scene_text_en": "The journey ahead is marked by the intersection of innovation and heritage.",
+        "scene_text_jp": "先に進む旅は、革新と伝統の交差点である。",
+        "image_path": "bgs_v2/shucchou-be6b736a-2747-4ef3-a562-",
+        "word": "shucchou"
+      }
+    },
+    {
+      "question": "出勤",
+      "answers": [
+        "going to work",
+        "leaving for work"
+      ],
+      "data": {
+        "dalle_prompt": "A busy Japanese train station filled with commuters in both traditional kimonos and modern business attire. The station is bustling with activity, featuring elements such as vending machines, ticket booths, and signage in Japanese characters. Trains are visible on the tracks, ready to depart. On the right side of the image, a formidable station master in a uniform, holding a traditional signal flag, stands vigilant, ensuring the smooth transition of travelers.",
+        "scene_text_en": "In the flurry of the daily rush, each departure signifies a new beginning.",
+        "scene_text_jp": "日々の喧騒の中で、毎回の出発が新たな始まりを意味する。",
+        "image_path": "bgs_v2/shukkin-6bbc8f28-3549-446c-b189-",
+        "word": "shukkin"
+      }
+    },
+    {
+      "question": "睡眠",
+      "answers": [
+        "sleep"
+      ],
+      "data": {
+        "dalle_prompt": "A peaceful bedroom in a traditional Japanese house, showcasing elements like shoji screens, futon mattresses, tatami mats, and softly lit paper lanterns. The sliding door is slightly open, revealing a moonlit garden outside. On the right side of the image, a formidable figure in a yukata, holding a pillow, stands watchfully, symbolizing the importance of sleep in maintaining balance and well-being in Japanese culture.",
+        "scene_text_en": "In the quiet embrace of night, rest is the bridge to tomorrow's promise.",
+        "scene_text_jp": "夜の静かな抱擁の中で、休息は明日の約束への橋である。",
+        "image_path": "bgs_v2/suimin-de629f2f-14b3-4b59-ab9f-",
+        "word": "suimin"
+      }
+    },
+    {
+      "question": "夜明け",
+      "answers": [
+        "dawn",
+        "daybreak"
+      ],
+      "data": {
+        "dalle_prompt": "A serene Japanese countryside at dawn, with rolling hills clad in cherry blossoms and tranquil rice paddies reflecting the soft morning light. A torii gate stands at the entrance to a sacred forest, bathed in hues of pink and gold. On the right side of the image, a formidable monk in traditional robes, holding a prayer bell, stands peacefully, symbolizing the reverence for the new day in Japanese culture.",
+        "scene_text_en": "As the first light graces the land, a new day is blessed with endless possibilities.",
+        "scene_text_jp": "大地に初日の光が差し込むと、新しい日は無限の可能性に祝福される。",
+        "image_path": "bgs_v2/yoake-09dfc3f4-6362-4218-8b97-",
+        "word": "yoake"
+      }
+    },
+    {
+      "question": "法",
+      "answers": [
+        "law",
+        "act",
+        "principle"
+      ],
+      "data": {
+        "dalle_prompt": "At the heart of a tranquil Japanese tea house, where the atmosphere is serene and time seems to slow. Delicate tatami mats cover the floor, low wooden tables are set with beautiful tea utensils, and soft sunlight filters through paper windows. In the center, a traditional tea ceremony is taking place. On the right side of the image, a formidable tea master in a kimono, holding a bamboo tea ladle, presides over the ritual with focused precision.",
+        "scene_text_en": "In the delicate art of serving tea, each movement whispers of harmony and respect.",
+        "scene_text_jp": "茶を点てる繊細な作法の中で、それぞれの動作が調和と敬意を囁く。",
+        "image_path": "bgs_v2/hou-e4f916a2-8f55-41b1-bb78-",
+        "word": "hou"
+      }
+    },
+    {
+      "question": "休日",
+      "answers": [
+        "holiday",
+        "day off"
+      ],
+      "data": {
+        "dalle_prompt": "A lush Japanese garden during a sunny holiday. There's a small koi pond surrounded by meticulously pruned bonsai trees, stone lanterns, and vibrant flowers. The garden pathways are lined with pebbles, inviting a leisurely stroll. On the right side of the image, a formidable gardener in traditional attire, holding a pair of pruning shears, stands watchfully, celebrating the beauty and tranquility of nature enjoyed during a day of rest.",
+        "scene_text_en": "Amidst meticulously tended greenery, nature's tranquility invites a moment of peaceful respite.",
+        "scene_text_jp": "丁寧に手入れされた緑の中で、自然の静けさが安らぎのひとときを招く。",
+        "image_path": "bgs_v2/kyuujitsu-a3a587ee-a0ee-42db-8b8d-",
+        "word": "kyuujitsu"
+      }
+    },
+    {
+      "question": "農家",
+      "answers": [
+        "farmer",
+        "farm family"
+      ],
+      "data": {
+        "dalle_prompt": "A vast Japanese countryside at harvest time, with golden rice fields extending to the horizon under a clear blue sky. Traditional thatched-roof farmhouses dot the landscape, and farmers are seen working diligently in the fields. In the right side of the image, a formidable farmer in traditional farming attire, holding a sickle, stands with a proud and determined expression, symbolizing the hard work and dedication involved in bringing in the harvest.",
+        "scene_text_en": "Amid the golden bounty, the fruits of labor and steadfast dedication shine brightly.",
+        "scene_text_jp": "黄金の恵みの中で、労働と堅実な努力の結晶が輝いている。",
+        "image_path": "bgs_v2/nouka-5ba13b7e-47bc-4059-b9b1-",
+        "word": "nouka"
+      }
+    },
+    {
+      "question": "作品",
+      "answers": [
+        "work",
+        "production"
+      ],
+      "data": {
+        "dalle_prompt": "An elegant Japanese art studio, filled with tools and materials for various traditional art forms. Scrolls of sumi-e paintings, delicate calligraphy, and intricate origami creations adorn the room. In the center, an artist is deeply immersed in their craft, their focus evident as they add the finishing touches to a masterpiece. On the right side of the image, a formidable artist in traditional attire, holding a brush poised over a canvas, exudes a calm, yet intense dedication to their work.",
+        "scene_text_en": "In each brush stroke and fold, the soul of the creator pours into the heart of the artwork.",
+        "scene_text_jp": "一つ一つの筆の動きや折りに、創作者の魂が作品の中へと注ぎ込まれている。",
+        "image_path": "bgs_v2/sakuhin-e16eb528-f769-4df6-b058-",
+        "word": "sakuhin"
+      }
+    },
+    {
+      "question": "芝生",
+      "answers": [
+        "lawn"
+      ],
+      "data": {
+        "dalle_prompt": "A serene scene in a traditional Japanese garden, featuring a beautifully manicured green lawn (shibafu), bordered by stone pathways and lush foliage. In the background, a quaint tea house can be seen, adding to the tranquil atmosphere. On the right side of the image, a formidable gardener in traditional attire, holding a bamboo rake, stands with a poised expression, maintaining the pristine condition of the lawn.",
+        "scene_text_en": "In the heart of this green expanse, every blade of grass contributes to a harmonious whole.",
+        "scene_text_jp": "緑の広がりの中で、一枚一枚の草の葉が調和を作り出している。",
+        "image_path": "bgs_v2/shibafu-64b4f7d2-ced3-4b77-918a-",
+        "word": "shibafu"
+      }
+    },
+    {
+      "question": "死亡",
+      "answers": [
+        "death",
+        "mortality"
+      ],
+      "data": {
+        "dalle_prompt": "A solemn scene in a traditional Japanese temple, with incense smoke wafting through the air and serene statues of deities surrounding the space. The temple is adorned with red lanterns and offering stands. On the right side of the image, a formidable monk in traditional robes, holding a prayer bead mala, stands with a peaceful yet intense expression, embodying spiritual contemplation and dedication to the temple's rituals.",
+        "scene_text_en": "Within the sacred halls, the echoes of prayers and dedication fill the serene air.",
+        "scene_text_jp": "神聖な殿堂の中で、祈りと献身の余韻が静かな空気を満たしている。",
+        "image_path": "bgs_v2/shibou-f3d6e452-de2b-4250-b591-",
+        "word": "shibou"
+      }
+    },
+    {
+      "question": "商売",
+      "answers": [
+        "trade",
+        "business"
+      ],
+      "data": {
+        "dalle_prompt": "A lively scene at a bustling Japanese marketplace, filled with various stalls selling fresh produce, traditional snacks, handcrafted goods, and vibrant textiles. Colorful banners and signs hang above the stalls, inviting people to explore. On the right side of the image, a formidable vendor in traditional attire, holding a fan and standing ready to attract customers with a spirited and intense expression.",
+        "scene_text_en": "Amidst the vibrant chatter and colorful displays, each vendor pours their heart into their craft and trade.",
+        "scene_text_jp": "賑やかな喧騒と色とりどりのディスプレイの中で、各商人が自分の工芸品と商売に心を注いでいる。",
+        "image_path": "bgs_v2/shoubai-d8b67d8c-91e5-4e56-9408-",
+        "word": "shoubai"
+      }
+    },
+    {
+      "question": "革",
+      "answers": [
+        "leather"
+      ],
+      "data": {
+        "dalle_prompt": "A tranquil scene along the riverbank of a picturesque Japanese river (kawa), with cherry blossom trees in full bloom lining the water's edge. Gentle ripples and reflections dance across the clear water, and a traditional wooden boat can be seen floating calmly. On the right side of the image, a formidable fisherman dressed in traditional attire stands at the water's edge, holding a fishing rod with a determined and focused expression.",
+        "scene_text_en": "Along these gentle waters, the blossoms' reflections tell tales of serenity and nature's grace.",
+        "scene_text_jp": "穏やかな水のほとりで、花々の反映が静けさと自然の優美さを語っている。",
+        "image_path": "bgs_v2/kawa-11f1a8df-b4ae-431c-8706-",
+        "word": "kawa"
+      }
+    },
+    {
+      "question": "食品",
+      "answers": [
+        "food",
+        "foodstuff"
+      ],
+      "data": {
+        "dalle_prompt": "A bustling scene in a traditional Japanese kitchen (shokunin no daidokoro), filled with authentic tools and ingredients for preparing Japanese cuisine. Chefs move with precision and purpose, while fresh ingredients like fish, rice, seaweed, and vegetables are meticulously arranged on the prep stations. On the right side of the image, a formidable chef in traditional attire, holding a sharp knife with a fierce and concentrated expression, ready to create a culinary masterpiece.",
+        "scene_text_en": "In the heart of the kitchen, the essence of culinary art is captured in every precise cut and flavor creation.",
+        "scene_text_jp": "台所の中心で、料理の芸術の本質がすべての正確な切り方と風味の創造に捉えられている。",
+        "image_path": "bgs_v2/shokuhin-da822c61-b76a-47b4-9c52-",
+        "word": "shokuhin"
+      }
+    },
+    {
+      "question": "天候",
+      "answers": [
+        "weather"
+      ],
+      "data": {
+        "dalle_prompt": "A captivating scene at a traditional Japanese shrine situated on top of a hill, overlooking the landscape. The sky is vivid with dynamic cloud formations and a warm sunbeam breaking through, illuminating the shrine. Autumn leaves gently fall from the surrounding maple trees, adding a touch of seasonal beauty to the scene. On the right side of the image, a formidable priest in traditional attire, holding a shaku (ritual baton) with a serene yet authoritative expression, stands ready to perform a rite.",
+        "scene_text_en": "High atop sacred ground, where the sky and land unite, timeless rituals bridge the heavens and earth.",
+        "scene_text_jp": "空と大地が結びつく聖なる地の高みで、永遠の儀式が天と地を結びつける。",
+        "image_path": "bgs_v2/tenkou-fa98302c-2814-4666-8d19-",
+        "word": "tenkou"
+      }
     }
   ]
 }

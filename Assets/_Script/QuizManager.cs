@@ -33,7 +33,6 @@ namespace KanjiGame
         private Dictionary<string, List<string>> quizDictionary = new Dictionary<string, List<string>>();
         private List<string> questionsList;
         private List<List<string>> answersList;
-        private List<Sprite> spriteData;
         private string currentQuestion;
         private int currentIndex = 0;
         // Start is called before the first frame update
@@ -45,6 +44,7 @@ namespace KanjiGame
         void Start()
         { 
             InitializeQACollection();
+
         }
 
         // Update is called once per frame
@@ -54,6 +54,7 @@ namespace KanjiGame
                 placeHolder.gameObject.SetActive(false);
 
             answerText.text = answersList[currentIndex][0];
+            imageBackground.sprite = image[currentIndex];
 
             CheckAnswer();
             CycleEndsTrigger();
@@ -109,7 +110,7 @@ namespace KanjiGame
 
         void InitializeQACollection()
         {
-            JSONDataConvert();
+            //JSONDataConvert();
             InitializeJson2();
             if (questionsList.Count > 0)
             {
@@ -175,7 +176,7 @@ namespace KanjiGame
                     else
                     {
                         Debug.LogError("Failed to load sprite at path: " + qa.data.image_path);
-                    }
+                    }   
                 }
             }
 

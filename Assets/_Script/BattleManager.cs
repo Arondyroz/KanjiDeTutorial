@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Cysharp.Threading.Tasks;
 using UnityEngine.TextCore.Text;
 
 namespace KanjiGame
@@ -44,70 +45,52 @@ namespace KanjiGame
             if (GameManager.Instance.gameState == GameState.Battle && !isBattleStarted)
             {
                 isBattleStarted = true;
-                battleCoroutine = StartCoroutine(StartBattle());
+                StartBattle().Forget();
             }
         }
 
-        IEnumerator StartBattle()
+        private async UniTaskVoid StartBattle()
         {
-            yield return new WaitForSeconds(1f);
+            await UniTask.Delay(1000); // 1 second delay
             Debug.Log("Battle started");
 
             while (player.CurrentHealth > 0f && enemy.CurrentHealth > 0f)
             {
                 if (stateTurn == StateTurn.PlayerTurn)
                 {
-                    yield return StartCoroutine(PlayerTurn());
+                    await PlayerTurn();
                 }
                 else
                 {
-                    yield return StartCoroutine(EnemyTurn());
+                    await EnemyTurn();
                 }
             }
 
             Debug.Log("Battle ended");
-            SceneManager.LoadScene(0);
+            await SceneManager.LoadSceneAsync(0);
         }
 
-        IEnumerator PlayerTurn()
+        private async UniTask PlayerTurn()
         {
             float damage = Mathf.Max(player.GetAttackDamage() - enemy.GetDefense(), 1f);
             enemy.TakeDamage(damage);
             Debug.Log($"Player attacks: {damage} damage. Enemy health: {enemy.CurrentHealth}");
 
-            yield return new WaitForSeconds(1.5f);
-            //playerHealthBar.SetMaxHealth(player.CurrentHealth);
+            await UniTask.Delay(1500); // 1.5 seconds delay
 
             stateTurn = StateTurn.EnemyTurn;
         }
 
-        IEnumerator EnemyTurn()
+        private async UniTask EnemyTurn()
         {
             float damage = Mathf.Max(enemy.GetAttackDamage() - player.GetDefense(), 1f);
             player.TakeDamage(damage);
             Debug.Log($"Enemy attacks: {damage} damage. Player health: {player.CurrentHealth}");
 
-            yield return new WaitForSeconds(1.5f);
+            await UniTask.Delay(1500); // 1.5 seconds delay
 
             stateTurn = StateTurn.PlayerTurn;
         }
-
-        private void OnDisable()
-        {
-            if (battleCoroutine != null)
-            {
-                StopCoroutine(battleCoroutine);
-            }
-        }
         public void ChangeState(StateTurn state) => stateTurn = state;
-
-        public void ChangePlayerHp()
-        {
-            //playerHP = GameManager.Instance.hpValue;
-            //playerAttack = GameManager.Instance.attackValue;
-            //playerDefense = GameManager.Instance.defenseValue;
-            //currentPlayerHealth = playerHP;
-            //playerHealthBar.SetMaxHealth(playerHP);
-        }
     }
 }

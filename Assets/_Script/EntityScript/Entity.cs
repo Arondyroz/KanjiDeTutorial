@@ -11,6 +11,8 @@ namespace KanjiGame
         public readonly HealthBar healthBar;
         public readonly TMP_Text healthText;
         public float CurrentHealth { get; private set; }
+        public float GetAttackDamage() => stats.attack;
+        public float GetDefense() => stats.defense;
 
         public Entity(Stats stats, HealthBar healthBar, TMP_Text healthText)
         {
@@ -28,10 +30,6 @@ namespace KanjiGame
             CurrentHealth = Mathf.Max(CurrentHealth - actualDamage, 0f);
             UpdateHealthDisplay(CurrentHealth);
         }
-
-        public float GetAttackDamage() => stats.attack;
-
-        public float GetDefense() => stats.defense;
 
         private void UpdateHealthDisplay(float currHealth)
         {
