@@ -44,7 +44,6 @@ namespace KanjiGame
         void Start()
         { 
             InitializeQACollection();
-
         }
 
         // Update is called once per frame
@@ -110,7 +109,7 @@ namespace KanjiGame
 
         void InitializeQACollection()
         {
-            //JSONDataConvert();
+            JSONDataConvert();
             InitializeJson2();
             if (questionsList.Count > 0)
             {
@@ -167,27 +166,21 @@ namespace KanjiGame
                 {
                     Sprite imageSprite = Resources.Load<Sprite>(qa.data.image_path);
 
-                    if (imageSprite != null)
-                    {
-                        // Add the sprite to your dictionary or list
-                        newDict[qa.question] = qa;
-                        image.Add(imageSprite);
-                    }
-                    else
-                    {
-                        Debug.LogError("Failed to load sprite at path: " + qa.data.image_path);
-                    }   
+                    newDict[qa.question] = qa;
+                    image.Add(imageSprite);
                 }
+
+                //questionsList = new List<string>(newDict.Keys);
+                //answersList = new List<List<string>>(newDict[questionsList].answers);
             }
 
-            questionsList = new List<string>(newDict.Keys);
 
-            if(questionsList.Count > 0)
-            {
-                currentQuestion = questionsList[0];
-                questionText.text = currentQuestion;
+            //if(questionsList.Count > 0)
+            //{
+            //    currentQuestion = questionsList[0];
+            //    questionText.text = currentQuestion;
 
-            }
+            //}
         }
 
         //public void AllocatePoint()
