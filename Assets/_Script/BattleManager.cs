@@ -29,8 +29,6 @@ namespace KanjiGame
         public StateTurn stateTurn;
 
         private bool isBattleStarted = false;
-        private Coroutine battleCoroutine;
-
         private void Start()
         {
             stateTurn = StateTurn.PlayerTurn;
