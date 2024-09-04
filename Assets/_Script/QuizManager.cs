@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
+using UnityEngine.Networking;
+using Cysharp.Threading.Tasks;
 using System.ComponentModel;
 using System.Xml.Linq;
 
@@ -30,30 +32,31 @@ namespace KanjiGame
         [SerializeField]
         private TMP_Text answerText;
 
-        private Dictionary<string, List<string>> quizDictionary = new Dictionary<string, List<string>>();
         private List<string> questionsList;
-        private List<List<string>> answersList;
+        private readonly List<List<string>> answersList = new();
         private string currentQuestion;
         private int currentIndex = 0;
         // Start is called before the first frame update
 
-        [SerializeField]
         private Dictionary<string, QAContainer> newDict = new();
         [SerializeField]
         private List<Sprite> image;
-        void Start()
-        { 
-            InitializeQACollection();
+
+        private const string API_URL = "https://arondyroz.github.io/KanjiDeTutorial/Assets/Resources/QAData.Json";
+        private async void Start()
+        {
+            await InitializeJson2();
+
+            answerText.text = answersList[currentIndex][0];
+            imageBackground.sprite = image[currentIndex];
         }
+
 
         // Update is called once per frame
         void Update()
         {
             if (inputAnswer.isFocused && Input.GetKeyDown(KeyCode.Return))
                 placeHolder.gameObject.SetActive(false);
-
-            answerText.text = answersList[currentIndex][0];
-            imageBackground.sprite = image[currentIndex];
 
             CheckAnswer();
             CycleEndsTrigger();
@@ -66,10 +69,10 @@ namespace KanjiGame
                 if(Input.GetKeyDown(KeyCode.Return))
                 {
                     string userAnswer = inputAnswer.text.ToLower();
-                    List<string> correctAnswers = quizDictionary[currentQuestion];
+                    List<string> correctAnswers = newDict[currentQuestion].answers;
                     bool isCorrect = correctAnswers.Exists(answer => answer.ToLower() == userAnswer);
       
-                    Debug.Log($"Answer : {quizDictionary[currentQuestion]}, UserAnswer : {userAnswer}");
+                    Debug.Log($"Answer : {newDict[currentQuestion]}, UserAnswer : {userAnswer}");
                     if (isCorrect)
                     {
                         onCorrectAnswer?.Invoke();
@@ -88,29 +91,72 @@ namespace KanjiGame
             }
         }
 
-        IEnumerator ChangeQuestion(float waitTime)
+        private IEnumerator ChangeQuestion(float waitTime)
         {
-            inputAnswer.enabled = false;
-            correctAnswerPanel.SetActive(true);
+            InputSetEnable(false);
+            CorrectAnswerPanelSetActive(true);
+
             GameManager.Instance.ChangeState(GameState.ShowAnswer);
             yield return new WaitForSeconds(waitTime);
 
-            correctAnswerPanel.SetActive(false);
-            if (currentIndex < questionsList.Count - 1)
-                currentIndex++;
+            CorrectAnswerPanelSetActive(false);
+            UpdateQuestionIndex();
+            UpdateUI();
+            InputSetEnable(true);
 
-            GameManager.Instance.ChangeState(GameState.Quiz);
-            inputAnswer.enabled = true;
-            currentQuestion = questionsList[currentIndex];
-            placeHolder.gameObject.SetActive(true);
-            questionText.text = currentQuestion;
             inputAnswer.ActivateInputField();
         }
 
-        void InitializeQACollection()
+        private void InputSetEnable(bool set) => inputAnswer.enabled = set;
+
+        private void CorrectAnswerPanelSetActive(bool set) => correctAnswerPanel.SetActive(set); 
+      
+        private void UpdateQuestionIndex()
         {
-            JSONDataConvert();
-            InitializeJson2();
+            if (currentIndex < questionsList.Count - 1)
+            {
+                currentIndex++;
+            }
+        }
+
+        private void UpdateUI()
+        {
+            answerText.text = answersList[currentIndex][0];
+            imageBackground.sprite = image[currentIndex];
+            currentQuestion = questionsList[currentIndex];
+            placeHolder.gameObject.SetActive(true);
+            questionText.text = currentQuestion;
+            GameManager.Instance.ChangeState(GameState.Quiz);
+        }
+
+        private async UniTask InitializeJson2()
+        {
+            QADataList qaData = await FetchJsonData();
+            if (qaData != null)
+            {
+                foreach(QAContainer qa in qaData.container)
+                {
+                    Sprite imageSprite = Resources.Load<Sprite>(qa.data.image_path);
+
+                    newDict[qa.question] = qa;
+                    image.Add(imageSprite);
+                    if (qa.answers != null)
+                    {
+                        // Convert qa.answers to List<string> and add to answersList
+                        List<string> answerList = new(qa.answers);
+                       
+                        answersList.Add(answerList);
+                    }
+
+                }
+                Debug.Log(answersList.Count);
+                questionsList = new List<string>(newDict.Keys);
+            }
+            else
+            {
+                Debug.LogError("Could not find the JSON file.");
+            }
+
             if (questionsList.Count > 0)
             {
                 currentQuestion = questionsList[currentIndex];
@@ -120,70 +166,40 @@ namespace KanjiGame
             inputAnswer.ActivateInputField();
         }
 
-        void JSONDataConvert()
+
+        private async UniTask<QADataList> FetchJsonData()
         {
-            TextAsset jsonFile = Resources.Load<TextAsset>("QAData");
-            if (jsonFile != null)
+            try
             {
-                QADataList qaData = JsonUtility.FromJson<QADataList>(jsonFile.text);
-
-                if (qaData == null)
+                using (UnityWebRequest request = UnityWebRequest.Get(API_URL))
                 {
-                    Debug.LogError("QADataList is null. Check the JSON structure.");
-                    return;
-                }
+                    // Await the completion of the web request
+                    var operation = await request.SendWebRequest().ToUniTask();
 
-                if (qaData.container == null)
-                {
-                    Debug.LogError("qaData.container is null. Check the JSON structure.");
-                    return;
+                    // Check if the request was successful
+                    if (request.result == UnityWebRequest.Result.Success)
+                    {
+                        // Get the JSON response and parse it
+                        string json = request.downloadHandler.text;
+                        QADataList qaData = JsonUtility.FromJson<QADataList>(json);
+                        return qaData;
+                    }
+                    else
+                    {
+                        // Log the error and return null
+                        Debug.LogError($"Error fetching data: {request.error}");
+                        return null;
+                    }
                 }
-                
-
-                foreach (QAContainer item in qaData.container)
-                {
-                    quizDictionary.Add(item.question, item.answers);
-                    //LoadImageDataJSOn(item.data.image_path);
-                }
-                
-                questionsList = new List<string>(quizDictionary.Keys);
-                answersList = new List<List<string>>(quizDictionary.Values);
             }
-            else
+            catch (System.Exception ex)
             {
-                Debug.LogError("Could not find the JSON file.");
+                // Log any exceptions that occur during the request or parsing
+                Debug.LogError($"Exception caught while fetching data: {ex.Message}");
+                return null;
             }
         }
 
-        void InitializeJson2()
-        {
-            TextAsset jsonFile = Resources.Load<TextAsset>("QAData");
-
-            QADataList qaData = JsonUtility.FromJson<QADataList>(jsonFile.text);
-            if (jsonFile != null)
-            {
-                foreach(QAContainer qa in qaData.container)
-                {
-                    Sprite imageSprite = Resources.Load<Sprite>(qa.data.image_path);
-
-                    newDict[qa.question] = qa;
-                    image.Add(imageSprite);
-                }
-
-                //questionsList = new List<string>(newDict.Keys);
-                //answersList = new List<List<string>>(newDict[questionsList].answers);
-            }
-
-
-            //if(questionsList.Count > 0)
-            //{
-            //    currentQuestion = questionsList[0];
-            //    questionText.text = currentQuestion;
-
-            //}
-        }
-
-        //public void AllocatePoint()
         public void CycleEndsTrigger()
         {
             if(currentIndex == 5)
